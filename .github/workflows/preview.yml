@@ -5,22 +5,14 @@ on:
     types: [opened, synchronize, reopened, closed]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
   pull-requests: write
 
 jobs:
-  # ──────────────────────────────────────────────
-  # Build & deploy preview for open/updated PRs
-  # ──────────────────────────────────────────────
   deploy-preview:
-    name: Build & deploy preview
+    name: Build and deploy preview
     if: github.event.action != 'closed'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v6
@@ -43,52 +35,52 @@ jobs:
       - name: Build HTML documentation
         run: npm run build
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Deploy PR preview to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist
-
-      - name: Deploy preview
-        id: deployment
-        uses: actions/deploy-pages@v5
-        with:
-          preview: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          destination_dir: pr-${{ github.event.pull_request.number }}
+          keep_files: true
 
       - name: Post or update PR comment with preview link
-        uses: actions/github-script@v9
+        uses: actions/github-script@v7
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = '${{ steps.deployment.outputs.page_url }}';
+            const repo = context.repo.repo;
+            const owner = context.repo.owner;
+            const previewUrl = 'https://' + owner + '.github.io/' + repo + '/pr-' + prNumber + '/';
             const marker = '<!-- avrodoc-preview-comment -->';
-            const body = `${marker}\n🔍 **Avrodoc Preview** — [Open preview ↗](${previewUrl})\n\n> Updated on every push. Removed when the PR is closed.`;
-
-            const { data: comments } = await github.rest.issues.listComments({
-              owner: context.repo.owner,
-              repo:  context.repo.repo,
-              issue_number: prNumber,
-            });
-
+            const body = marker + '\n🔍 **Avrodoc Preview** — [Open preview](' + previewUrl + ')\n\n> Updated on every push. Removed when PR closes.';
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: prNumber });
             const existing = comments.find(c => c.body.includes(marker));
             if (existing) {
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo:  context.repo.repo,
-                comment_id: existing.id,
-                body,
-              });
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
             } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo:  context.repo.repo,
-                issue_number: prNumber,
-                body,
-              });
+              await github.rest.issues.createComment({ owner, repo, issue_number: prNumber, body });
             }
 
-  # ──────────────────────────────────────────────
-  # No cleanup needed — preview deployments expire
-  # automatically when the PR closes.
-  # ──────────────────────────────────────────────
+  cleanup-preview:
+    name: Clean up preview
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
 
-
+      - name: Remove PR preview directory
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -d "pr-${PR_NUMBER}" ]; then
+            git rm -rf "pr-${PR_NUMBER}"
+            git commit -m "chore: remove preview for PR #${PR_NUMBER}"
+            git push
+          else
+            echo "No preview directory for PR #${PR_NUMBER}, skipping."
+          fi
