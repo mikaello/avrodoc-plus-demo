@@ -7,7 +7,7 @@ on:
 
 # Allow one concurrent deployment; cancel older runs
 concurrency:
-  group: pages
+  group: pages-main
   cancel-in-progress: true
 
 permissions:

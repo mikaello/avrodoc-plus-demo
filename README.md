@@ -53,16 +53,10 @@ npm run generate:build
 Two workflows are included:
 
 ### `deploy.yml` — Publish to GitHub Pages
-Triggers on every push to `main`. Generates schemas, builds the HTML, and deploys to GitHub Pages using the official `actions/deploy-pages` action.
-
-**One-time setup required:** Enable GitHub Pages in the repository settings:
-- Go to **Settings → Pages**
-- Set **Source** to **GitHub Actions**
+Triggers on every push to `main`. Generates schemas, builds the HTML, and deploys to GitHub Pages using `actions/upload-pages-artifact` + `actions/deploy-pages`. Pages source must be set to **GitHub Actions** (Settings → Pages → Source).
 
 ### `preview.yml` — PR previews
-On every PR push, builds the docs and deploys them to the `gh-pages` branch under `pr-<number>/`. Posts (or updates) a comment on the PR with the preview link. Cleans up the subdirectory when the PR is closed.
-
-> **Note:** The main site (deployed by `deploy.yml`) and PR previews (deployed by `preview.yml`) coexist in the `gh-pages` branch — the main site at the root, previews under `pr-<N>/` subdirectories.
+On every PR push, builds the docs and deploys a preview using `actions/deploy-pages` with `preview: true`. Posts (or updates) a comment on the PR with the preview URL. Preview deployments are automatically cleaned up by GitHub when the PR closes — no extra cleanup step needed.
 
 ## Avro spec reference
 

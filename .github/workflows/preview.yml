@@ -5,8 +5,10 @@ on:
     types: [opened, synchronize, reopened, closed]
 
 permissions:
-  contents: write        # push to gh-pages branch
-  pull-requests: write   # post comments
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
 
 jobs:
   # ──────────────────────────────────────────────
@@ -16,9 +18,9 @@ jobs:
     name: Build & deploy preview
     if: github.event.action != 'closed'
     runs-on: ubuntu-latest
-    env:
-      PR_NUMBER: ${{ github.event.pull_request.number }}
-      PREVIEW_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/pr-${{ github.event.pull_request.number }}/
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4
@@ -38,57 +40,25 @@ jobs:
       - name: Build HTML documentation
         run: npm run build
 
-      - name: Checkout gh-pages branch (or create it)
-        uses: actions/checkout@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          ref: gh-pages
-          path: gh-pages
-          # Create the branch if it doesn't exist yet
-          fetch-depth: 0
-        continue-on-error: true
+          path: dist
 
-      - name: Initialise gh-pages branch if it didn't exist
-        run: |
-          if [ ! -d gh-pages ]; then
-            git clone --no-local --branch gh-pages \
-              https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git \
-              gh-pages 2>/dev/null || (
-                mkdir gh-pages
-                cd gh-pages
-                git init
-                git remote add origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
-                git checkout --orphan gh-pages
-                echo "GitHub Pages" > index.html
-                git add .
-                git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" \
-                  commit -m "chore: initialise gh-pages"
-                git push origin gh-pages
-              )
-          fi
-
-      - name: Copy preview into gh-pages/pr-<N>/
-        run: |
-          mkdir -p gh-pages/pr-${PR_NUMBER}
-          cp -r dist/. gh-pages/pr-${PR_NUMBER}/
-
-      - name: Push preview to gh-pages
-        working-directory: gh-pages
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pr-${PR_NUMBER}/
-          git diff --staged --quiet && echo "No changes" || \
-            git commit -m "preview: update PR #${PR_NUMBER}" && \
-            git push origin gh-pages
+      - name: Deploy preview
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          preview: true
 
       - name: Post or update PR comment with preview link
         uses: actions/github-script@v7
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = process.env.PREVIEW_URL;
+            const previewUrl = '${{ steps.deployment.outputs.page_url }}';
             const marker = '<!-- avrodoc-preview-comment -->';
-            const body = `${marker}\n🔍 **Avrodoc Preview** — [Open preview ↗](${previewUrl})\n\n> This preview is updated on every push to this PR and removed when the PR is closed.`;
+            const body = `${marker}\n🔍 **Avrodoc Preview** — [Open preview ↗](${previewUrl})\n\n> Updated on every push. Removed when the PR is closed.`;
 
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
@@ -97,7 +67,6 @@ jobs:
             });
 
             const existing = comments.find(c => c.body.includes(marker));
-
             if (existing) {
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
@@ -115,29 +84,8 @@ jobs:
             }
 
   # ──────────────────────────────────────────────
-  # Clean up preview when PR is closed / merged
+  # No cleanup needed — preview deployments expire
+  # automatically when the PR closes.
   # ──────────────────────────────────────────────
-  cleanup-preview:
-    name: Clean up PR preview
-    if: github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    env:
-      PR_NUMBER: ${{ github.event.pull_request.number }}
-    steps:
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          token: ${{ github.token }}
 
-      - name: Remove preview directory
-        run: |
-          if [ -d "pr-${PR_NUMBER}" ]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git rm -rf pr-${PR_NUMBER}/
-            git commit -m "chore: remove preview for PR #${PR_NUMBER}"
-            git push origin gh-pages
-          else
-            echo "No preview directory found for PR #${PR_NUMBER}, nothing to remove."
-          fi
+
