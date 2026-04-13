@@ -4,6 +4,7 @@
     "type": "enum",
     "name": "MapStatus",
     "namespace": "com.example.maps",
+    "doc": "Binary status flag used as the value type in a feature-flag map. ON indicates the feature is active.",
     "symbols": [
       "ON",
       "OFF"

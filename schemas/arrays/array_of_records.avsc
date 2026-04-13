@@ -4,15 +4,18 @@
     "type": "record",
     "name": "ArrayItem",
     "namespace": "com.example.arrays",
+    "doc": "A single item in a typed array, carrying an identifier and a numeric value.",
     "fields": [
       {
         "name": "id",
         "type": "string",
+        "doc": "Unique identifier for this array item.",
         "default": ""
       },
       {
         "name": "value",
         "type": "double",
+        "doc": "Numeric value associated with this item.",
         "default": 0
       }
     ]

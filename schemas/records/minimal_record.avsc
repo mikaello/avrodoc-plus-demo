@@ -2,5 +2,6 @@
   "type": "record",
   "name": "MinimalRecord",
   "namespace": "com.example.records",
+  "doc": "A minimal record with no fields. Useful as a placeholder or marker type in schemas where the presence of the record itself carries meaning.",
   "fields": []
 }

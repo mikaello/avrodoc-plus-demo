@@ -4,6 +4,7 @@
     "type": "enum",
     "name": "ArrayColor",
     "namespace": "com.example.arrays",
+    "doc": "A primary colour value used to tag items in a collection.",
     "symbols": [
       "RED",
       "GREEN",

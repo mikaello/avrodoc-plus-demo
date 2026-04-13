@@ -4,10 +4,12 @@
     "type": "record",
     "name": "UnionRecord",
     "namespace": "com.example.unions",
+    "doc": "Record variant of a mixed union, carrying an arbitrary binary payload.",
     "fields": [
       {
         "name": "data",
         "type": "bytes",
+        "doc": "Raw binary data for this union variant.",
         "default": ""
       }
     ]
@@ -16,6 +18,7 @@
     "type": "enum",
     "name": "UnionEnum",
     "namespace": "com.example.unions",
+    "doc": "Enum variant of a mixed union. Symbols represent abstract categories X, Y, and Z.",
     "symbols": [
       "X",
       "Y",
@@ -27,6 +30,7 @@
     "type": "fixed",
     "name": "UnionFixed",
     "namespace": "com.example.unions",
+    "doc": "Fixed-size binary variant of a mixed union. Stores exactly 4 bytes, e.g. an IPv4 address.",
     "size": 4
   }
 ]

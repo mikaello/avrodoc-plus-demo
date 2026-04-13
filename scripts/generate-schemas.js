@@ -87,6 +87,7 @@ write('records', 'minimal_record', {
   type: 'record',
   name: 'MinimalRecord',
   namespace: 'com.example.records',
+  doc: 'A minimal record with no fields. Useful as a placeholder or marker type in schemas where the presence of the record itself carries meaning.',
   fields: [],
 });
 
@@ -661,9 +662,10 @@ write('arrays', 'array_of_records', {
     type: 'record',
     name: 'ArrayItem',
     namespace: 'com.example.arrays',
+    doc: 'A single item in a typed array, carrying an identifier and a numeric value.',
     fields: [
-      { name: 'id',    type: 'string',  default: '' },
-      { name: 'value', type: 'double',  default: 0.0 },
+      { name: 'id',    type: 'string',  doc: 'Unique identifier for this array item.', default: '' },
+      { name: 'value', type: 'double',  doc: 'Numeric value associated with this item.', default: 0.0 },
     ],
   },
 });
@@ -674,6 +676,7 @@ write('arrays', 'array_of_enums', {
     type: 'enum',
     name: 'ArrayColor',
     namespace: 'com.example.arrays',
+    doc: 'A primary colour value used to tag items in a collection.',
     symbols: ['RED', 'GREEN', 'BLUE'],
     default: 'RED',
   },
@@ -737,7 +740,8 @@ write('arrays', 'array_of_nullable_records', {
     type: 'record',
     name: 'NullableArrayItem',
     namespace: 'com.example.arrays',
-    fields: [{ name: 'data', type: 'string', default: '' }],
+    doc: 'An optional array item that may be absent (null) or contain a data payload.',
+    fields: [{ name: 'data', type: 'string', doc: 'Raw data payload for this item.', default: '' }],
   }],
 });
 
@@ -779,9 +783,10 @@ write('maps', 'map_of_records', {
     type: 'record',
     name: 'MapValueRecord',
     namespace: 'com.example.maps',
+    doc: 'A record used as the value type in a string-keyed map, pairing an identifier with a score.',
     fields: [
-      { name: 'id',    type: 'string',  default: '' },
-      { name: 'score', type: 'double',  default: 0.0 },
+      { name: 'id',    type: 'string',  doc: 'Unique identifier for this entry.', default: '' },
+      { name: 'score', type: 'double',  doc: 'Computed score for this entry, between 0.0 and 1.0.', default: 0.0 },
     ],
   },
 });
@@ -792,6 +797,7 @@ write('maps', 'map_of_enums', {
     type: 'enum',
     name: 'MapStatus',
     namespace: 'com.example.maps',
+    doc: 'Binary status flag used as the value type in a feature-flag map. ON indicates the feature is active.',
     symbols: ['ON', 'OFF'],
     default: 'OFF',
   },
@@ -899,13 +905,15 @@ write('unions', 'union_two_records', [
     type: 'record',
     name: 'UnionRecordA',
     namespace: 'com.example.unions',
-    fields: [{ name: 'aField', type: 'string', default: '' }],
+    doc: 'First variant of a two-record union, carrying a string payload.',
+    fields: [{ name: 'aField', type: 'string', doc: 'String value for variant A.', default: '' }],
   },
   {
     type: 'record',
     name: 'UnionRecordB',
     namespace: 'com.example.unions',
-    fields: [{ name: 'bField', type: 'int', default: 0 }],
+    doc: 'Second variant of a two-record union, carrying an integer payload.',
+    fields: [{ name: 'bField', type: 'int', doc: 'Integer value for variant B.', default: 0 }],
   },
 ]);
 
@@ -915,12 +923,14 @@ write('unions', 'union_record_enum_fixed', [
     type: 'record',
     name: 'UnionRecord',
     namespace: 'com.example.unions',
-    fields: [{ name: 'data', type: 'bytes', default: '' }],
+    doc: 'Record variant of a mixed union, carrying an arbitrary binary payload.',
+    fields: [{ name: 'data', type: 'bytes', doc: 'Raw binary data for this union variant.', default: '' }],
   },
   {
     type: 'enum',
     name: 'UnionEnum',
     namespace: 'com.example.unions',
+    doc: 'Enum variant of a mixed union. Symbols represent abstract categories X, Y, and Z.',
     symbols: ['X', 'Y', 'Z'],
     default: 'X',
   },
@@ -928,15 +938,16 @@ write('unions', 'union_record_enum_fixed', [
     type: 'fixed',
     name: 'UnionFixed',
     namespace: 'com.example.unions',
+    doc: 'Fixed-size binary variant of a mixed union. Stores exactly 4 bytes, e.g. an IPv4 address.',
     size: 4,
   },
 ]);
 
 write('unions', 'union_multiple_records', [
   'null',
-  { type: 'record', name: 'Cat', namespace: 'com.example.pets', fields: [{ name: 'breed', type: 'string', default: '' }] },
-  { type: 'record', name: 'Dog', namespace: 'com.example.pets', fields: [{ name: 'breed', type: 'string', default: '' }] },
-  { type: 'record', name: 'Bird', namespace: 'com.example.pets', fields: [{ name: 'species', type: 'string', default: '' }] },
+  { type: 'record', name: 'Cat',  namespace: 'com.example.pets', doc: 'Represents a domestic cat. One of three pet variants in this union.',  fields: [{ name: 'breed',   type: 'string', doc: "Recognised cat breed name, e.g. 'Siamese' or 'Maine Coon'.", default: '' }] },
+  { type: 'record', name: 'Dog',  namespace: 'com.example.pets', doc: 'Represents a domestic dog. One of three pet variants in this union.',  fields: [{ name: 'breed',   type: 'string', doc: "Recognised dog breed name, e.g. 'Labrador' or 'Poodle'.", default: '' }] },
+  { type: 'record', name: 'Bird', namespace: 'com.example.pets', doc: 'Represents a pet bird. One of three pet variants in this union.',      fields: [{ name: 'species', type: 'string', doc: "Bird species name, e.g. 'Budgerigar' or 'African Grey Parrot'.", default: '' }] },
 ]);
 
 // 6d. Union as record fields
@@ -1948,14 +1959,14 @@ write('complex', 'spec_file_header', {
 // 11j. Large union (8 named types)
 write('complex', 'large_union_eight_types', [
   'null',
-  { type: 'record', name: 'TypeA', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'string', default: '' }] },
-  { type: 'record', name: 'TypeB', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'int',    default: 0 }] },
-  { type: 'record', name: 'TypeC', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'long',   default: 0 }] },
-  { type: 'record', name: 'TypeD', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'double', default: 0.0 }] },
-  { type: 'enum',   name: 'TypeE', namespace: 'com.example.complex.union8', symbols: ['E1','E2','E3'], default: 'E1' },
-  { type: 'fixed',  name: 'TypeF', namespace: 'com.example.complex.union8', size: 4 },
-  { type: 'record', name: 'TypeG', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'boolean', default: false }] },
-  { type: 'record', name: 'TypeH', namespace: 'com.example.complex.union8', fields: [{ name: 'v', type: 'bytes',   default: '' }] },
+  { type: 'record', name: 'TypeA', namespace: 'com.example.complex.union8', doc: 'String-valued variant of an eight-type union. Used when the payload is human-readable text.',        fields: [{ name: 'v', type: 'string',  doc: 'The string payload.',              default: '' }] },
+  { type: 'record', name: 'TypeB', namespace: 'com.example.complex.union8', doc: 'Integer-valued variant of an eight-type union. Suitable for small whole-number payloads.',          fields: [{ name: 'v', type: 'int',     doc: '32-bit integer payload.',          default: 0 }] },
+  { type: 'record', name: 'TypeC', namespace: 'com.example.complex.union8', doc: 'Long-valued variant of an eight-type union. Use when the integer range exceeds 32 bits.',           fields: [{ name: 'v', type: 'long',    doc: '64-bit long payload.',             default: 0 }] },
+  { type: 'record', name: 'TypeD', namespace: 'com.example.complex.union8', doc: 'Double-valued variant of an eight-type union. Used for floating-point numeric payloads.',           fields: [{ name: 'v', type: 'double',  doc: '64-bit floating-point payload.',   default: 0.0 }] },
+  { type: 'enum',   name: 'TypeE', namespace: 'com.example.complex.union8', doc: 'Enum variant of an eight-type union. Represents one of three abstract categories.',                 symbols: ['E1','E2','E3'], default: 'E1' },
+  { type: 'fixed',  name: 'TypeF', namespace: 'com.example.complex.union8', doc: 'Fixed 4-byte variant of an eight-type union. Useful for compact binary identifiers.',               size: 4 },
+  { type: 'record', name: 'TypeG', namespace: 'com.example.complex.union8', doc: 'Boolean-valued variant of an eight-type union. Used for simple true/false payloads.',               fields: [{ name: 'v', type: 'boolean', doc: 'Boolean flag payload.',            default: false }] },
+  { type: 'record', name: 'TypeH', namespace: 'com.example.complex.union8', doc: 'Bytes-valued variant of an eight-type union. Used for opaque binary payloads.',                     fields: [{ name: 'v', type: 'bytes',   doc: 'Raw binary payload.',              default: '' }] },
 ]);
 
 // 11k. Multi-level complex nesting
