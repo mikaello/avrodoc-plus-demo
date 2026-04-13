@@ -1,0 +1,39 @@
+{
+  "type": "record",
+  "name": "CircuitBreaker",
+  "namespace": "com.example.resilience",
+  "doc": "CircuitBreaker record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "state",
+      "type": "string",
+      "default": "CLOSED"
+    },
+    {
+      "name": "failures",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "threshold",
+      "type": "int",
+      "default": 5
+    },
+    {
+      "name": "lastFailure",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

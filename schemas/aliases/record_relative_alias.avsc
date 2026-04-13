@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "CurrentRecord",
+  "namespace": "com.example.aliases",
+  "doc": "Record with a relative alias. Fully-qualified alias: com.example.aliases.LegacyRecord.",
+  "aliases": [
+    "LegacyRecord"
+  ],
+  "fields": [
+    {
+      "name": "value",
+      "type": "long",
+      "default": 0
+    }
+  ]
+}

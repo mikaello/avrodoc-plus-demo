@@ -1,0 +1,5 @@
+{
+  "type": "long",
+  "logicalType": "timestamp-nanos",
+  "doc": "Instant as nanoseconds from unix epoch. Added in Avro 1.12.0. Avro spec §Timestamps."
+}

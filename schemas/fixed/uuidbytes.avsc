@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "UUIDBytes",
+  "namespace": "com.example.fixed",
+  "size": 16,
+  "doc": "UUID as 16-byte fixed (RFC-4122)."
+}

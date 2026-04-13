@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "LogLevel",
+  "namespace": "com.example.enums",
+  "doc": "Logging levels.",
+  "symbols": [
+    "TRACE",
+    "DEBUG",
+    "INFO",
+    "WARN",
+    "ERROR",
+    "FATAL"
+  ],
+  "default": "INFO"
+}

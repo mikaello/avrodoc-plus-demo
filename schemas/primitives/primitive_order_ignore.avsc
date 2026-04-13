@@ -1,0 +1,50 @@
+{
+  "type": "record",
+  "name": "PrimitiveOrderIgnore",
+  "namespace": "com.example.primitives",
+  "doc": "Record with all primitives using order=\"ignore\".",
+  "fields": [
+    {
+      "name": "booleanField",
+      "type": "boolean",
+      "order": "ignore",
+      "default": false
+    },
+    {
+      "name": "intField",
+      "type": "int",
+      "order": "ignore",
+      "default": 0
+    },
+    {
+      "name": "longField",
+      "type": "long",
+      "order": "ignore",
+      "default": 0
+    },
+    {
+      "name": "floatField",
+      "type": "float",
+      "order": "ignore",
+      "default": 0
+    },
+    {
+      "name": "doubleField",
+      "type": "double",
+      "order": "ignore",
+      "default": 0
+    },
+    {
+      "name": "bytesField",
+      "type": "bytes",
+      "order": "ignore",
+      "default": ""
+    },
+    {
+      "name": "stringField",
+      "type": "string",
+      "order": "ignore",
+      "default": ""
+    }
+  ]
+}

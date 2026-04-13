@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "UsageRecord",
+  "namespace": "com.example.billing",
+  "doc": "UsageRecord record.",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "quantity",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "unit",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "recordedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

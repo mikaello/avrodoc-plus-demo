@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "ClusterNode",
+  "namespace": "com.example.cluster",
+  "doc": "ClusterNode record.",
+  "fields": [
+    {
+      "name": "nodeId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "host",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "port",
+      "type": "int",
+      "default": 8080
+    },
+    {
+      "name": "role",
+      "type": "string",
+      "default": "FOLLOWER"
+    },
+    {
+      "name": "joinedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

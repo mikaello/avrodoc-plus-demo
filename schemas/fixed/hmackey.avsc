@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "HMACKey",
+  "namespace": "com.example.crypto",
+  "size": 32,
+  "doc": "HMAC key (32 bytes)."
+}

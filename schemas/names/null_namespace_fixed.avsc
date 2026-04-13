@@ -1,0 +1,6 @@
+{
+  "type": "fixed",
+  "name": "NullNamespaceFixed",
+  "doc": "Fixed with null namespace — fullname is just \"NullNamespaceFixed\".",
+  "size": 8
+}

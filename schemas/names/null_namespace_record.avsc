@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "NullNamespaceRecord",
+  "doc": "Record with null namespace — fullname is just \"NullNamespaceRecord\".",
+  "fields": [
+    {
+      "name": "data",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

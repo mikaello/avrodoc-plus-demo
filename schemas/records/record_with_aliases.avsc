@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "RenamedRecord",
+  "namespace": "com.example.records",
+  "doc": "A record that has been renamed; old names are kept as aliases.",
+  "aliases": [
+    "com.example.records.OldRecord",
+    "com.example.legacy.OldRecord"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "aliases": [
+        "uuid",
+        "identifier"
+      ],
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": "int",
+      "aliases": [
+        "amount"
+      ],
+      "default": 0
+    }
+  ]
+}

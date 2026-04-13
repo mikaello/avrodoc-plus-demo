@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "RenamedEnum",
+  "namespace": "com.example.enums",
+  "doc": "An enum that was renamed.",
+  "symbols": [
+    "A",
+    "B",
+    "C"
+  ],
+  "default": "A",
+  "aliases": [
+    "com.example.enums.OldEnum"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "array",
+  "items": {
+    "type": "enum",
+    "name": "ArrayColor",
+    "namespace": "com.example.arrays",
+    "symbols": [
+      "RED",
+      "GREEN",
+      "BLUE"
+    ],
+    "default": "RED"
+  }
+}

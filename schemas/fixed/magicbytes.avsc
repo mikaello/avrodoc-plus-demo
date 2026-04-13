@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "MagicBytes",
+  "namespace": "com.example.fixed",
+  "size": 4,
+  "doc": "Avro container file magic bytes (4 bytes)."
+}

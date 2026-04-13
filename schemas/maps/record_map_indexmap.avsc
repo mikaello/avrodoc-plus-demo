@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "IndexMap",
+  "namespace": "com.example.maps",
+  "doc": "Record with a map of int values.",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": "int"
+      },
+      "default": {}
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

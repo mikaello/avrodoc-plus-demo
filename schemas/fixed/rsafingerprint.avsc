@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "RSAFingerprint",
+  "namespace": "com.example.crypto",
+  "size": 20,
+  "doc": "RSA key fingerprint (20 bytes)."
+}

@@ -1,0 +1,79 @@
+{
+  "type": "record",
+  "name": "Person",
+  "namespace": "com.example.records",
+  "doc": "A person with a nested address.",
+  "fields": [
+    {
+      "name": "firstName",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "homeAddress",
+      "type": {
+        "type": "record",
+        "name": "HomeAddress",
+        "namespace": "com.example.records",
+        "doc": "Home address of the person.",
+        "fields": [
+          {
+            "name": "street",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "default": "US"
+          }
+        ]
+      }
+    },
+    {
+      "name": "workAddress",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "WorkAddress",
+          "namespace": "com.example.records",
+          "doc": "Optional work address.",
+          "fields": [
+            {
+              "name": "building",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "street",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "city",
+              "type": "string",
+              "default": ""
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}

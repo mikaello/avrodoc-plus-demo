@@ -1,0 +1,18 @@
+{
+  "type": "enum",
+  "name": "HttpStatus",
+  "namespace": "com.example.http",
+  "doc": "Common HTTP status codes.",
+  "symbols": [
+    "OK",
+    "CREATED",
+    "ACCEPTED",
+    "NO_CONTENT",
+    "BAD_REQUEST",
+    "UNAUTHORIZED",
+    "FORBIDDEN",
+    "NOT_FOUND",
+    "INTERNAL_SERVER_ERROR"
+  ],
+  "default": "OK"
+}

@@ -1,0 +1,54 @@
+{
+  "type": "record",
+  "name": "OuterRecord",
+  "namespace": "com.example.ns",
+  "doc": "Demonstrates namespace inheritance for nested named types.",
+  "fields": [
+    {
+      "name": "innerEnum",
+      "type": {
+        "type": "enum",
+        "name": "Status",
+        "doc": "Status enum inheriting namespace from OuterRecord.",
+        "symbols": [
+          "ACTIVE",
+          "INACTIVE",
+          "PENDING"
+        ]
+      },
+      "default": "ACTIVE"
+    },
+    {
+      "name": "explicitNsFixed",
+      "type": {
+        "type": "fixed",
+        "name": "Hash",
+        "namespace": "com.example.hashing",
+        "size": 32
+      }
+    },
+    {
+      "name": "fullNameRecord",
+      "type": {
+        "type": "record",
+        "name": "a.b.InnerRecord",
+        "namespace": "ignored",
+        "doc": "Uses a dotted fullname; the namespace attribute is ignored.",
+        "fields": [
+          {
+            "name": "inheritedEnum",
+            "type": {
+              "type": "enum",
+              "name": "InheritedStatus",
+              "symbols": [
+                "YES",
+                "NO"
+              ]
+            },
+            "default": "YES"
+          }
+        ]
+      }
+    }
+  ]
+}

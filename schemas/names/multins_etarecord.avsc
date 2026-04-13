@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "EtaRecord",
+  "namespace": "net.example.eta",
+  "doc": "Fullname: net.example.eta.EtaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

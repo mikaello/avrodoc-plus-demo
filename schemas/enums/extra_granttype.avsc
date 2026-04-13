@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "GrantType",
+  "namespace": "com.example.auth",
+  "doc": "GrantType enum.",
+  "symbols": [
+    "AUTHORIZATION_CODE",
+    "CLIENT_CREDENTIALS",
+    "PASSWORD",
+    "REFRESH_TOKEN",
+    "IMPLICIT"
+  ],
+  "default": "AUTHORIZATION_CODE"
+}

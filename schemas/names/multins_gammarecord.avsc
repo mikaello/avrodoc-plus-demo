@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "GammaRecord",
+  "namespace": "com.example.a.b.c",
+  "doc": "Fullname: com.example.a.b.c.GammaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

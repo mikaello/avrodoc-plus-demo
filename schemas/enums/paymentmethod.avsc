@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "PaymentMethod",
+  "namespace": "com.example.payments",
+  "doc": "Payment methods.",
+  "symbols": [
+    "CARD",
+    "BANK_TRANSFER",
+    "PAYPAL",
+    "CRYPTO",
+    "INVOICE"
+  ],
+  "default": "CARD"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "AlertSeverity",
+  "namespace": "com.example.ops",
+  "doc": "AlertSeverity enum.",
+  "symbols": [
+    "INFO",
+    "WARNING",
+    "ERROR",
+    "CRITICAL"
+  ],
+  "default": "INFO"
+}

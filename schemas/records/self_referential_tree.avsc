@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "BinaryTreeNode",
+  "namespace": "com.example.records",
+  "doc": "A binary tree node.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "string",
+      "doc": "Node value."
+    },
+    {
+      "name": "left",
+      "type": [
+        "null",
+        "com.example.records.BinaryTreeNode"
+      ],
+      "doc": "Left child.",
+      "default": null
+    },
+    {
+      "name": "right",
+      "type": [
+        "null",
+        "com.example.records.BinaryTreeNode"
+      ],
+      "doc": "Right child.",
+      "default": null
+    }
+  ]
+}

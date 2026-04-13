@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SmallFixed2",
+  "namespace": "com.example.fixed",
+  "size": 2,
+  "doc": "Small fixed: 2 bytes."
+}

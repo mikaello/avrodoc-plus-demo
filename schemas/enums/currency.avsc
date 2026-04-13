@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "Currency",
+  "namespace": "com.example.enums",
+  "doc": "Currency codes.",
+  "symbols": [
+    "USD",
+    "EUR",
+    "GBP",
+    "JPY",
+    "CHF",
+    "CAD",
+    "AUD"
+  ],
+  "default": "USD"
+}

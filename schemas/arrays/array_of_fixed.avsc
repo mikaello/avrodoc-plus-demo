@@ -1,0 +1,9 @@
+{
+  "type": "array",
+  "items": {
+    "type": "fixed",
+    "name": "ArrayFixed8",
+    "namespace": "com.example.arrays",
+    "size": 8
+  }
+}

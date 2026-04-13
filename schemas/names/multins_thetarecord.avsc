@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ThetaRecord",
+  "namespace": "com.acme.core.schema",
+  "doc": "Fullname: com.acme.core.schema.ThetaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

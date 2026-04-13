@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "FileMetadata",
+  "namespace": "com.example.files",
+  "doc": "FileMetadata record.",
+  "fields": [
+    {
+      "name": "filename",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "size",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "mimeType",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "checksum",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": "long",
+      "default": 0
+    }
+  ]
+}

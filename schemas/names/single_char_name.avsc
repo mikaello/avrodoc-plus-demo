@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "X",
+  "namespace": "com.example.names.single",
+  "doc": "Minimal valid name: single character.",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

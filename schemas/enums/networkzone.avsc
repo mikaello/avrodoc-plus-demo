@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "NetworkZone",
+  "namespace": "com.example.net",
+  "doc": "Network security zones.",
+  "symbols": [
+    "PUBLIC",
+    "DMZ",
+    "INTERNAL",
+    "RESTRICTED"
+  ],
+  "default": "INTERNAL"
+}

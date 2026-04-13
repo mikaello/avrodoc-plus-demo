@@ -1,0 +1,46 @@
+{
+  "type": "record",
+  "name": "BuildRecord",
+  "namespace": "com.example.devops",
+  "doc": "BuildRecord record.",
+  "fields": [
+    {
+      "name": "buildId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "commit",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "branch",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "PENDING"
+    },
+    {
+      "name": "startedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "finishedAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

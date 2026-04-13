@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "PermissionRecord",
+  "namespace": "com.example.permissions",
+  "doc": "PermissionRecord record.",
+  "fields": [
+    {
+      "name": "subject",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "actions",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "granted",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

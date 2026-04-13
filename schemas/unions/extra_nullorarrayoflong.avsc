@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "NullOrArrayOfLong",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrArrayOfLong.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "long"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

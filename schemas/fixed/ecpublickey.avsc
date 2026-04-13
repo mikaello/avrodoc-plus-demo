@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "ECPublicKey",
+  "namespace": "com.example.crypto",
+  "size": 64,
+  "doc": "EC public key (64 bytes, uncompressed)."
+}

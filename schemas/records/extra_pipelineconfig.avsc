@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "PipelineConfig",
+  "namespace": "com.example.etl",
+  "doc": "PipelineConfig record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sink",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "rules",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "default": true
+    }
+  ]
+}

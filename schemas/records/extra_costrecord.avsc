@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "CostRecord",
+  "namespace": "com.example.billing",
+  "doc": "CostRecord record.",
+  "fields": [
+    {
+      "name": "service",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "amount",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 4
+      }
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "default": "USD"
+    },
+    {
+      "name": "billedAt",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    }
+  ]
+}

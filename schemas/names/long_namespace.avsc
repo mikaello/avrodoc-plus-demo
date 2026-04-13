@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "DeepRecord",
+  "namespace": "com.example.a.b.c.d.e.f.g",
+  "doc": "Record with a very deeply nested namespace.",
+  "fields": [
+    {
+      "name": "v",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

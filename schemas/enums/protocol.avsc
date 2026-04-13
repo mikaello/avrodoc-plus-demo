@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "Protocol",
+  "namespace": "com.example.net",
+  "doc": "Network protocols.",
+  "symbols": [
+    "HTTP",
+    "HTTPS",
+    "FTP",
+    "SFTP",
+    "SMTP",
+    "IMAP"
+  ],
+  "default": "HTTPS"
+}

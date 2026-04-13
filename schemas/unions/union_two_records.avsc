@@ -1,0 +1,27 @@
+[
+  "null",
+  {
+    "type": "record",
+    "name": "UnionRecordA",
+    "namespace": "com.example.unions",
+    "fields": [
+      {
+        "name": "aField",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "UnionRecordB",
+    "namespace": "com.example.unions",
+    "fields": [
+      {
+        "name": "bField",
+        "type": "int",
+        "default": 0
+      }
+    ]
+  }
+]

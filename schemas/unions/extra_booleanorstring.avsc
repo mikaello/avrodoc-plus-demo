@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "BooleanOrString",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: BooleanOrString.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "boolean",
+        "string"
+      ],
+      "default": false
+    }
+  ]
+}

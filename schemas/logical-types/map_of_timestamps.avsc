@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "TimestampMap",
+  "namespace": "com.example.logical",
+  "doc": "Map of timestamp-millis logical type values.",
+  "fields": [
+    {
+      "name": "timestamps",
+      "type": {
+        "type": "map",
+        "values": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      "default": {}
+    }
+  ]
+}

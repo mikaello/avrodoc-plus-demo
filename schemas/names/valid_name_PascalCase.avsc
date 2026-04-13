@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName_PascalCase",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: PascalCase",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "AlertTriggeredEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: AlertTriggeredEvent.",
+  "fields": [
+    {
+      "name": "alertId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "ruleId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "severity",
+      "type": "string",
+      "default": "INFO"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "triggeredAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "resolvedAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

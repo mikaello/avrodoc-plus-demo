@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "TestRun",
+  "namespace": "com.example.devops",
+  "doc": "TestRun record.",
+  "fields": [
+    {
+      "name": "runId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "suite",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "passed",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "failed",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "skipped",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "durationMs",
+      "type": "long",
+      "default": 0
+    }
+  ]
+}

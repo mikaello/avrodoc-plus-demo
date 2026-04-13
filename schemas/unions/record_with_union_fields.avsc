@@ -1,0 +1,66 @@
+{
+  "type": "record",
+  "name": "RecordWithUnions",
+  "namespace": "com.example.unions",
+  "doc": "Record with various union field types.",
+  "fields": [
+    {
+      "name": "optString",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "optInt",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "optLong",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "optDouble",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "optBoolean",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null
+    },
+    {
+      "name": "optBytes",
+      "type": [
+        "null",
+        "bytes"
+      ],
+      "default": null
+    },
+    {
+      "name": "multiType",
+      "type": [
+        "null",
+        "string",
+        "int",
+        "boolean"
+      ],
+      "default": null
+    }
+  ]
+}

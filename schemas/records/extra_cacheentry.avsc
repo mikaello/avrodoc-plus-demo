@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "CacheEntry",
+  "namespace": "com.example.cache",
+  "doc": "CacheEntry record.",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": "bytes",
+      "default": ""
+    },
+    {
+      "name": "ttlMs",
+      "type": "long",
+      "default": 300000
+    },
+    {
+      "name": "cachedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

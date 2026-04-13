@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "CompositeKey32",
+  "namespace": "com.example.keys",
+  "size": 32,
+  "doc": "Composite key (32 bytes)."
+}

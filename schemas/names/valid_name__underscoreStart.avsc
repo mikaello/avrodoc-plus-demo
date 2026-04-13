@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName__underscoreStart",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: _underscoreStart",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

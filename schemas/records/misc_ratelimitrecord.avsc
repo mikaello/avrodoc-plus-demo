@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "RateLimitRecord",
+  "namespace": "com.example.ratelimit",
+  "doc": "RateLimitRecord record.",
+  "fields": [
+    {
+      "name": "clientId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "endpoint",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "requests",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "windowMs",
+      "type": "long",
+      "default": 60000
+    },
+    {
+      "name": "exceeded",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

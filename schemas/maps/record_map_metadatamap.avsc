@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "MetadataMap",
+  "namespace": "com.example.maps",
+  "doc": "Record with a map of bytes values.",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": "bytes"
+      },
+      "default": {}
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

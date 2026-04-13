@@ -1,0 +1,55 @@
+{
+  "type": "record",
+  "name": "HandshakeResponse",
+  "namespace": "org.apache.avro.ipc",
+  "doc": "Avro spec §Handshake: HandshakeResponse schema.",
+  "fields": [
+    {
+      "name": "match",
+      "type": {
+        "type": "enum",
+        "name": "HandshakeMatch",
+        "namespace": "org.apache.avro.ipc",
+        "symbols": [
+          "BOTH",
+          "CLIENT",
+          "NONE"
+        ],
+        "default": "NONE"
+      },
+      "default": "NONE"
+    },
+    {
+      "name": "serverProtocol",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "serverHash",
+      "type": [
+        "null",
+        {
+          "type": "fixed",
+          "name": "HandshakeMD5Server",
+          "namespace": "org.apache.avro.ipc",
+          "size": 16
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "meta",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "bytes"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

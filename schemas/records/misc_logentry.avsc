@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "LogEntry",
+  "namespace": "com.example.logging",
+  "doc": "LogEntry record.",
+  "fields": [
+    {
+      "name": "level",
+      "type": "string",
+      "default": "INFO"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "logger",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "thread",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ts",
+      "type": "long",
+      "default": 0
+    }
+  ]
+}

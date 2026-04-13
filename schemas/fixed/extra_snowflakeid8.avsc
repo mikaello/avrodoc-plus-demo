@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SnowflakeId8",
+  "namespace": "com.example.ids",
+  "size": 8,
+  "doc": "Snowflake-style 64-bit ID (8 bytes)."
+}

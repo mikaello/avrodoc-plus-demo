@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "FeatureState",
+  "namespace": "com.example.features",
+  "doc": "State of a feature flag.",
+  "symbols": [
+    "ENABLED",
+    "DISABLED",
+    "DEPRECATED",
+    "EXPERIMENTAL"
+  ],
+  "default": "DISABLED"
+}

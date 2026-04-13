@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "PartitionKey16",
+  "namespace": "com.example.keys",
+  "size": 16,
+  "doc": "Partition key (16 bytes)."
+}

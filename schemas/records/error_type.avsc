@@ -1,0 +1,20 @@
+{
+  "type": "error",
+  "name": "ApplicationError",
+  "namespace": "com.example.records",
+  "doc": "A reusable application error.",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "doc": "Human-readable error message.",
+      "default": ""
+    },
+    {
+      "name": "code",
+      "type": "int",
+      "doc": "Numeric error code.",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "CellId8",
+  "namespace": "com.example.geo",
+  "size": 8,
+  "doc": "S2 CellId (64-bit = 8 bytes)."
+}

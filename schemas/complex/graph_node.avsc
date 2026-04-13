@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "GraphNode",
+  "namespace": "com.example.complex",
+  "doc": "A directed graph node with multiple outgoing edges.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "neighbors",
+      "type": {
+        "type": "array",
+        "items": "com.example.complex.GraphNode"
+      },
+      "default": []
+    }
+  ]
+}

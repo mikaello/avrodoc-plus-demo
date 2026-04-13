@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "FileFormat",
+  "namespace": "com.example.enums",
+  "doc": "File formats.",
+  "symbols": [
+    "AVRO",
+    "JSON",
+    "CSV",
+    "PARQUET",
+    "ORC",
+    "TSV"
+  ],
+  "default": "AVRO"
+}

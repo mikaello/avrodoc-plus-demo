@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "NullBytesOrString",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullBytesOrString.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "bytes",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

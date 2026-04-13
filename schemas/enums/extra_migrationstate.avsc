@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "MigrationState",
+  "namespace": "com.example.db",
+  "doc": "MigrationState enum.",
+  "symbols": [
+    "PENDING",
+    "RUNNING",
+    "COMPLETED",
+    "FAILED",
+    "ROLLED_BACK"
+  ],
+  "default": "PENDING"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "bytes",
+  "logicalType": "decimal",
+  "precision": 10,
+  "scale": 2,
+  "doc": "Monetary amount: decimal(10,2) on bytes."
+}

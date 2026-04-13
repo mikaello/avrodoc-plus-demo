@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "RowVersion",
+  "namespace": "com.example.db",
+  "size": 8,
+  "doc": "SQL Server rowversion / timestamp (8 bytes)."
+}

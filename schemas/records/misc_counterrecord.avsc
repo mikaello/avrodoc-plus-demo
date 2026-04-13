@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "CounterRecord",
+  "namespace": "com.example.counters",
+  "doc": "CounterRecord record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "count",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "resetAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

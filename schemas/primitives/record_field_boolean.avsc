@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfBoolean",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single boolean field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "boolean",
+      "doc": "The boolean value.",
+      "default": false
+    }
+  ]
+}

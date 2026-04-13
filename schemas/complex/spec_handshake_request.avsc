@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "HandshakeRequest",
+  "namespace": "org.apache.avro.ipc",
+  "doc": "Avro spec §Handshake: HandshakeRequest schema.",
+  "fields": [
+    {
+      "name": "clientHash",
+      "type": {
+        "type": "fixed",
+        "name": "HandshakeMD5Client",
+        "namespace": "org.apache.avro.ipc",
+        "size": 16
+      }
+    },
+    {
+      "name": "clientProtocol",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "serverHash",
+      "type": "org.apache.avro.ipc.HandshakeMD5Client"
+    },
+    {
+      "name": "meta",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "bytes"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

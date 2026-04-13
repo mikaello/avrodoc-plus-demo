@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "Status",
+  "namespace": "com.example.workflow",
+  "doc": "Workflow status.",
+  "symbols": [
+    "PENDING",
+    "IN_PROGRESS",
+    "DONE",
+    "CANCELLED",
+    "FAILED"
+  ],
+  "default": "PENDING"
+}

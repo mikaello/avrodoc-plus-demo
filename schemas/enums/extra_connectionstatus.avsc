@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "ConnectionStatus",
+  "namespace": "com.example.social",
+  "doc": "ConnectionStatus enum.",
+  "symbols": [
+    "NONE",
+    "PENDING",
+    "CONNECTED",
+    "BLOCKED"
+  ],
+  "default": "NONE"
+}

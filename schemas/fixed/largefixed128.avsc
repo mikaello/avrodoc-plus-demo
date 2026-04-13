@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "LargeFixed128",
+  "namespace": "com.example.fixed",
+  "size": 128,
+  "doc": "Large fixed: 128 bytes."
+}

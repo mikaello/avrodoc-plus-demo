@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "ConfigEntry",
+  "namespace": "com.example.config",
+  "doc": "ConfigEntry record.",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

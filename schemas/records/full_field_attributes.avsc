@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "FullFieldAttributes",
+  "namespace": "com.example.records",
+  "doc": "Record demonstrating every field attribute from the spec.",
+  "aliases": [
+    "com.example.records.FullFieldAttributesOld"
+  ],
+  "fields": [
+    {
+      "name": "ascendingInt",
+      "type": "int",
+      "doc": "An int field with ascending sort order.",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "descendingLong",
+      "type": "long",
+      "doc": "A long field with descending sort order.",
+      "order": "descending",
+      "default": 0
+    },
+    {
+      "name": "ignoredString",
+      "type": "string",
+      "doc": "A string field ignored in sort order.",
+      "order": "ignore",
+      "aliases": [
+        "oldIgnoredString",
+        "legacyIgnored"
+      ],
+      "default": ""
+    }
+  ]
+}

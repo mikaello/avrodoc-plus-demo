@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "Encoding",
+  "namespace": "com.example.enums",
+  "doc": "Character encodings.",
+  "symbols": [
+    "UTF8",
+    "UTF16",
+    "ASCII",
+    "LATIN1"
+  ],
+  "default": "UTF8"
+}

@@ -1,0 +1,71 @@
+{
+  "type": "record",
+  "name": "ComplexMisc20",
+  "namespace": "com.example.complex.misc",
+  "doc": "Miscellaneous complex schema 20, mixing primitives, collections, and logical types.",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "version",
+      "type": "int",
+      "default": 20
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "optionalMsg",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "metadata",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "createdAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "MiscStatus20",
+        "namespace": "com.example.complex.misc",
+        "symbols": [
+          "ACTIVE",
+          "INACTIVE",
+          "DELETED"
+        ],
+        "default": "ACTIVE"
+      },
+      "default": "ACTIVE"
+    }
+  ]
+}

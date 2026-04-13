@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "ScheduledTaskEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: ScheduledTaskEvent.",
+  "fields": [
+    {
+      "name": "taskId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "scheduledFor",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "repeatEvery",
+      "type": [
+        "null",
+        {
+          "type": "fixed",
+          "name": "TaskDuration",
+          "namespace": "com.example.events",
+          "size": 12,
+          "logicalType": "duration"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": {
+        "type": "long",
+        "logicalType": "local-timestamp-millis"
+      }
+    }
+  ]
+}

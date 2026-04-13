@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "Priority",
+  "namespace": "com.example.enums",
+  "doc": "Priority levels.",
+  "symbols": [
+    "LOW",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "default": "MEDIUM"
+}

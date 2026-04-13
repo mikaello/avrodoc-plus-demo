@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "Gender",
+  "namespace": "com.example.enums",
+  "doc": "Gender options.",
+  "symbols": [
+    "MALE",
+    "FEMALE",
+    "NON_BINARY",
+    "UNSPECIFIED"
+  ],
+  "default": "UNSPECIFIED"
+}

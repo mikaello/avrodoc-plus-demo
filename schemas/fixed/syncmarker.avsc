@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SyncMarker",
+  "namespace": "com.example.fixed",
+  "size": 16,
+  "doc": "Avro container file sync marker (16 bytes)."
+}

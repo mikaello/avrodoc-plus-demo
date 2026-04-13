@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "Visibility",
+  "namespace": "com.example.enums",
+  "doc": "Visibility levels.",
+  "symbols": [
+    "PUBLIC",
+    "PRIVATE",
+    "INTERNAL"
+  ],
+  "default": "PRIVATE"
+}

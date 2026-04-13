@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "NullOrUUID",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrUUID.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "string",
+          "logicalType": "uuid"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

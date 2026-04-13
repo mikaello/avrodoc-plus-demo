@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "UnionVariant03",
+  "namespace": "com.example.unions",
+  "doc": "Union variant 3: null | boolean | string.",
+  "fields": [
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "boolean",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

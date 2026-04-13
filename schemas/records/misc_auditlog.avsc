@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "AuditLog",
+  "namespace": "com.example.audit",
+  "doc": "AuditLog record.",
+  "fields": [
+    {
+      "name": "actor",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "action",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "success",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "ts",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "details",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

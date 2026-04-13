@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "ULID10",
+  "namespace": "com.example.ids",
+  "size": 10,
+  "doc": "ULID compact representation (10 bytes)."
+}

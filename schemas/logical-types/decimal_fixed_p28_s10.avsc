@@ -1,0 +1,10 @@
+{
+  "type": "fixed",
+  "name": "DecimalFixed_p28_s10",
+  "namespace": "com.example.logical",
+  "size": 12,
+  "logicalType": "decimal",
+  "precision": 28,
+  "scale": 10,
+  "doc": "decimal(28,10) on fixed(12)."
+}

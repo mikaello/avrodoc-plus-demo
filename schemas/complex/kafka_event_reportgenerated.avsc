@@ -1,0 +1,51 @@
+{
+  "type": "record",
+  "name": "ReportGeneratedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: ReportGeneratedEvent.",
+  "fields": [
+    {
+      "name": "reportId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "period",
+      "type": {
+        "type": "fixed",
+        "name": "ReportDuration",
+        "namespace": "com.example.events",
+        "size": 12,
+        "logicalType": "duration"
+      }
+    },
+    {
+      "name": "startDate",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    },
+    {
+      "name": "endDate",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    },
+    {
+      "name": "generatedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "SortOrder",
+  "namespace": "com.example.enums",
+  "doc": "Avro sort orders.",
+  "symbols": [
+    "ASCENDING",
+    "DESCENDING",
+    "IGNORE"
+  ],
+  "default": "ASCENDING"
+}

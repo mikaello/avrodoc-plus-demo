@@ -1,0 +1,8 @@
+{
+  "type": "fixed",
+  "name": "UUIDFixed",
+  "namespace": "com.example.logical",
+  "size": 16,
+  "logicalType": "uuid",
+  "doc": "UUID as 16-byte fixed (RFC-4122). Avro spec §UUID."
+}

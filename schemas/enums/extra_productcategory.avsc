@@ -1,0 +1,17 @@
+{
+  "type": "enum",
+  "name": "ProductCategory",
+  "namespace": "com.example.ecommerce",
+  "doc": "ProductCategory enum.",
+  "symbols": [
+    "ELECTRONICS",
+    "CLOTHING",
+    "FOOD",
+    "FURNITURE",
+    "BOOKS",
+    "SPORTS",
+    "BEAUTY",
+    "AUTOMOTIVE"
+  ],
+  "default": "ELECTRONICS"
+}

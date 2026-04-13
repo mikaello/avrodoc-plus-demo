@@ -1,0 +1,92 @@
+[
+  "null",
+  {
+    "type": "record",
+    "name": "TypeA",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "TypeB",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "int",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "TypeC",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "long",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "TypeD",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "double",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "TypeE",
+    "namespace": "com.example.complex.union8",
+    "symbols": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "default": "E1"
+  },
+  {
+    "type": "fixed",
+    "name": "TypeF",
+    "namespace": "com.example.complex.union8",
+    "size": 4
+  },
+  {
+    "type": "record",
+    "name": "TypeG",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "boolean",
+        "default": false
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "TypeH",
+    "namespace": "com.example.complex.union8",
+    "fields": [
+      {
+        "name": "v",
+        "type": "bytes",
+        "default": ""
+      }
+    ]
+  }
+]

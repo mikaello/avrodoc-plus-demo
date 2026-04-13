@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "Nonce32",
+  "namespace": "com.example.fixed",
+  "size": 32,
+  "doc": "Cryptographic nonce (32 bytes)."
+}

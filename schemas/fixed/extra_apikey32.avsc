@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "APIKey32",
+  "namespace": "com.example.auth",
+  "size": 32,
+  "doc": "API key (32 bytes)."
+}

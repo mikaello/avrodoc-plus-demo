@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "CompositeRecord",
+  "namespace": "com.example.complex",
+  "doc": "Demonstrates referencing named types defined in other files in the same --input folder.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "logLevel",
+      "type": "com.example.enums.LogLevel",
+      "doc": "References LogLevel enum from enums/ folder."
+    },
+    {
+      "name": "priority",
+      "type": "com.example.enums.Priority",
+      "doc": "References Priority enum."
+    },
+    {
+      "name": "checksum",
+      "type": [
+        "null",
+        "com.example.fixed.MD5Hash"
+      ],
+      "doc": "Optional MD5 checksum.",
+      "default": null
+    }
+  ]
+}

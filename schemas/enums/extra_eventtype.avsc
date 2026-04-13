@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "EventType",
+  "namespace": "com.example.events",
+  "doc": "EventType enum.",
+  "symbols": [
+    "CREATE",
+    "UPDATE",
+    "DELETE",
+    "RESTORE",
+    "ARCHIVE",
+    "PUBLISH"
+  ],
+  "default": "CREATE"
+}

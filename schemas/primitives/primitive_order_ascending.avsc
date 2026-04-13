@@ -1,0 +1,50 @@
+{
+  "type": "record",
+  "name": "PrimitiveOrderAscending",
+  "namespace": "com.example.primitives",
+  "doc": "Record with all primitives using order=\"ascending\".",
+  "fields": [
+    {
+      "name": "booleanField",
+      "type": "boolean",
+      "order": "ascending",
+      "default": false
+    },
+    {
+      "name": "intField",
+      "type": "int",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "longField",
+      "type": "long",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "floatField",
+      "type": "float",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "doubleField",
+      "type": "double",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "bytesField",
+      "type": "bytes",
+      "order": "ascending",
+      "default": ""
+    },
+    {
+      "name": "stringField",
+      "type": "string",
+      "order": "ascending",
+      "default": ""
+    }
+  ]
+}

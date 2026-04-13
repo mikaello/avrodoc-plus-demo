@@ -1,0 +1,114 @@
+{
+  "type": "record",
+  "name": "AllFieldDefaults",
+  "namespace": "com.example.records",
+  "doc": "Tests every field default type from the spec table.",
+  "fields": [
+    {
+      "name": "nullField",
+      "type": "null",
+      "default": null
+    },
+    {
+      "name": "boolField",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "intField",
+      "type": "int",
+      "default": 42
+    },
+    {
+      "name": "longField",
+      "type": "long",
+      "default": 9999999
+    },
+    {
+      "name": "floatField",
+      "type": "float",
+      "default": 1.5
+    },
+    {
+      "name": "doubleField",
+      "type": "double",
+      "default": 3.14
+    },
+    {
+      "name": "bytesField",
+      "type": "bytes",
+      "default": "ÿ"
+    },
+    {
+      "name": "stringField",
+      "type": "string",
+      "default": "hello"
+    },
+    {
+      "name": "enumField",
+      "type": {
+        "type": "enum",
+        "name": "DefaultColor",
+        "namespace": "com.example.records",
+        "symbols": [
+          "RED",
+          "GREEN",
+          "BLUE"
+        ]
+      },
+      "default": "RED"
+    },
+    {
+      "name": "arrayField",
+      "type": {
+        "type": "array",
+        "items": "int"
+      },
+      "default": []
+    },
+    {
+      "name": "mapField",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "fixedField",
+      "type": {
+        "type": "fixed",
+        "name": "DefaultFixed4",
+        "namespace": "com.example.records",
+        "size": 4
+      },
+      "default": "\u0000\u0000\u0000\u0000"
+    },
+    {
+      "name": "recordField",
+      "type": {
+        "type": "record",
+        "name": "InnerRecord",
+        "namespace": "com.example.records",
+        "fields": [
+          {
+            "name": "x",
+            "type": "int",
+            "default": 0
+          }
+        ]
+      },
+      "default": {
+        "x": 1
+      }
+    },
+    {
+      "name": "unionField",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

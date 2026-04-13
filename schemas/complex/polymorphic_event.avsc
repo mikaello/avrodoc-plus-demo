@@ -1,0 +1,93 @@
+{
+  "type": "record",
+  "name": "PolymorphicEvent",
+  "namespace": "com.example.complex",
+  "doc": "An event that can be one of several event types (polymorphism via union).",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "payload",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "ClickEvent",
+          "namespace": "com.example.complex",
+          "fields": [
+            {
+              "name": "url",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "element",
+              "type": "string",
+              "default": ""
+            }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "PageViewEvent",
+          "namespace": "com.example.complex",
+          "fields": [
+            {
+              "name": "url",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "duration",
+              "type": "long",
+              "default": 0
+            }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "PurchaseEvent",
+          "namespace": "com.example.complex",
+          "fields": [
+            {
+              "name": "itemId",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "amount",
+              "type": "double",
+              "default": 0
+            }
+          ]
+        },
+        {
+          "type": "record",
+          "name": "ErrorEvent",
+          "namespace": "com.example.complex",
+          "fields": [
+            {
+              "name": "code",
+              "type": "int",
+              "default": 0
+            },
+            {
+              "name": "message",
+              "type": "string",
+              "default": ""
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}

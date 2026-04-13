@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "PaginationInfo",
+  "namespace": "com.example.api",
+  "doc": "PaginationInfo record.",
+  "fields": [
+    {
+      "name": "page",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 20
+    },
+    {
+      "name": "total",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "hasNext",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "hasPrev",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

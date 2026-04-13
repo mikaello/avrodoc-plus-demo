@@ -1,0 +1,10 @@
+{
+  "type": "fixed",
+  "name": "DecimalFixed_p18_s6",
+  "namespace": "com.example.logical",
+  "size": 8,
+  "logicalType": "decimal",
+  "precision": 18,
+  "scale": 6,
+  "doc": "decimal(18,6) on fixed(8)."
+}

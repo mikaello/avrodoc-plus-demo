@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "Header",
+  "namespace": "org.apache.avro.file",
+  "doc": "Avro spec §Object Container Files: file header schema.",
+  "fields": [
+    {
+      "name": "magic",
+      "type": {
+        "type": "fixed",
+        "name": "Magic",
+        "namespace": "org.apache.avro.file",
+        "size": 4
+      }
+    },
+    {
+      "name": "meta",
+      "type": {
+        "type": "map",
+        "values": "bytes"
+      }
+    },
+    {
+      "name": "sync",
+      "type": {
+        "type": "fixed",
+        "name": "FileSync",
+        "namespace": "org.apache.avro.file",
+        "size": 16
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "Container",
+  "namespace": "com.example.names",
+  "doc": "Shows same simple name used in two different namespaces — legal in Avro.",
+  "fields": [
+    {
+      "name": "ns1Value",
+      "type": {
+        "type": "record",
+        "name": "Item",
+        "namespace": "com.example.names.ns1",
+        "fields": [
+          {
+            "name": "x",
+            "type": "int",
+            "default": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "ns2Value",
+      "type": {
+        "type": "record",
+        "name": "Item",
+        "namespace": "com.example.names.ns2",
+        "fields": [
+          {
+            "name": "y",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      }
+    }
+  ]
+}

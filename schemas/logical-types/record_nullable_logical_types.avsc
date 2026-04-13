@@ -1,0 +1,131 @@
+{
+  "type": "record",
+  "name": "NullableLogicalTypes",
+  "namespace": "com.example.logical",
+  "doc": "Record with all logical types as nullable fields.",
+  "fields": [
+    {
+      "name": "optDate",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optTimeMillis",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "time-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optTimeMicros",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "time-micros"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optTsMillis",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optTsMicros",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-micros"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optTsNanos",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-nanos"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optLocalTsMillis",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "local-timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optLocalTsMicros",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "local-timestamp-micros"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optLocalTsNanos",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "local-timestamp-nanos"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optUuid",
+      "type": [
+        "null",
+        {
+          "type": "string",
+          "logicalType": "uuid"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optDecimal",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 10,
+          "scale": 2
+        }
+      ],
+      "default": null
+    }
+  ]
+}

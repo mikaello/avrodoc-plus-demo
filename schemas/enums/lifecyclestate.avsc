@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "LifecycleState",
+  "namespace": "com.example.lifecycle",
+  "doc": "Entity lifecycle state.",
+  "symbols": [
+    "DRAFT",
+    "REVIEW",
+    "APPROVED",
+    "PUBLISHED",
+    "DEPRECATED",
+    "ARCHIVED",
+    "DELETED"
+  ],
+  "default": "DRAFT"
+}

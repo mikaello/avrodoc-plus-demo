@@ -1,0 +1,7 @@
+{
+  "type": "bytes",
+  "logicalType": "decimal",
+  "precision": 4,
+  "scale": 2,
+  "doc": "Spec example: decimal(4,2) on bytes."
+}

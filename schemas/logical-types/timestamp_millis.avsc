@@ -1,0 +1,5 @@
+{
+  "type": "long",
+  "logicalType": "timestamp-millis",
+  "doc": "Instant as milliseconds from unix epoch. Avro spec §Timestamps."
+}

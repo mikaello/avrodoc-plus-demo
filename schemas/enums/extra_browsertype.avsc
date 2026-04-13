@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "BrowserType",
+  "namespace": "com.example.devices",
+  "doc": "BrowserType enum.",
+  "symbols": [
+    "CHROME",
+    "FIREFOX",
+    "SAFARI",
+    "EDGE",
+    "OPERA",
+    "OTHER"
+  ],
+  "default": "OTHER"
+}

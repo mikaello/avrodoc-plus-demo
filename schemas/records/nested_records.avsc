@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "Address",
+  "namespace": "com.example.records",
+  "doc": "A postal address.",
+  "fields": [
+    {
+      "name": "street",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "zip",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfLong",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single long field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "long",
+      "doc": "The long value.",
+      "default": 0
+    }
+  ]
+}

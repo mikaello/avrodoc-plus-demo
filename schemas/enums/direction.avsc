@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "Direction",
+  "namespace": "com.example.enums",
+  "doc": "Cardinal directions.",
+  "symbols": [
+    "NORTH",
+    "SOUTH",
+    "EAST",
+    "WEST"
+  ],
+  "default": "NORTH"
+}

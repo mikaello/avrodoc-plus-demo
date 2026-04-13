@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SpanId8",
+  "namespace": "com.example.tracing",
+  "size": 8,
+  "doc": "OpenTelemetry SpanId (64-bit = 8 bytes)."
+}

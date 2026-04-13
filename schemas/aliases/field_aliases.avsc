@@ -1,0 +1,58 @@
+{
+  "type": "record",
+  "name": "FieldAliasRecord",
+  "namespace": "com.example.aliases",
+  "doc": "Record where fields have aliases for schema evolution.",
+  "fields": [
+    {
+      "name": "userId",
+      "type": "string",
+      "aliases": [
+        "user_id",
+        "uid",
+        "id"
+      ],
+      "default": ""
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "aliases": [
+        "first_name",
+        "given_name"
+      ],
+      "default": ""
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "aliases": [
+        "last_name",
+        "family_name"
+      ],
+      "default": ""
+    },
+    {
+      "name": "emailAddr",
+      "type": "string",
+      "aliases": [
+        "email",
+        "emailAddress",
+        "e"
+      ],
+      "default": ""
+    },
+    {
+      "name": "phoneNum",
+      "type": [
+        "null",
+        "string"
+      ],
+      "aliases": [
+        "phone",
+        "phoneNumber"
+      ],
+      "default": null
+    }
+  ]
+}

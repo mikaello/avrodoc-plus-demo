@@ -1,0 +1,18 @@
+{
+  "type": "array",
+  "items": [
+    "null",
+    {
+      "type": "record",
+      "name": "NullableArrayItem",
+      "namespace": "com.example.arrays",
+      "fields": [
+        {
+          "name": "data",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "avrodoc-plus-demo",
+  "version": "1.0.0",
+  "description": "Stress-test demo for @mikaello/avrodoc-plus covering all Avro spec 1.12.1 features",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-schemas.js",
+    "build": "npx --yes @mikaello/avrodoc-plus -i schemas -o dist/index.html --title \"Avrodoc Plus Demo\"",
+    "generate:build": "npm run generate && npm run build"
+  },
+  "devDependencies": {
+    "@mikaello/avrodoc-plus": "latest"
+  }
+}

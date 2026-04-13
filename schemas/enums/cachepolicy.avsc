@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "CachePolicy",
+  "namespace": "com.example.caching",
+  "doc": "HTTP cache policies.",
+  "symbols": [
+    "NO_CACHE",
+    "NO_STORE",
+    "PUBLIC",
+    "PRIVATE_CACHE",
+    "MAX_AGE"
+  ],
+  "default": "NO_CACHE"
+}

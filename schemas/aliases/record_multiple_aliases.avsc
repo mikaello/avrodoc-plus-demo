@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "CanonicalRecord",
+  "namespace": "com.example.aliases",
+  "doc": "Record with many aliases from multiple renames over time.",
+  "aliases": [
+    "com.example.aliases.Version1Record",
+    "com.example.aliases.Version2Record",
+    "com.example.legacy.OldRecord",
+    "AncientRecord"
+  ],
+  "fields": [
+    {
+      "name": "x",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

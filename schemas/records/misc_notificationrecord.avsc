@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "NotificationRecord",
+  "namespace": "com.example.notifications",
+  "doc": "NotificationRecord record.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "recipient",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "channel",
+      "type": "string",
+      "default": "email"
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "body",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sentAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

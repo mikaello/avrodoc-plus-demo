@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "TokenType",
+  "namespace": "com.example.auth",
+  "doc": "TokenType enum.",
+  "symbols": [
+    "ACCESS",
+    "REFRESH",
+    "API_KEY",
+    "ID_TOKEN"
+  ],
+  "default": "ACCESS"
+}

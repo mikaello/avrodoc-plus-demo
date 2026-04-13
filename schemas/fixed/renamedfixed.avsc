@@ -1,0 +1,10 @@
+{
+  "type": "fixed",
+  "name": "RenamedFixed",
+  "namespace": "com.example.fixed",
+  "size": 8,
+  "doc": "A fixed with an alias for schema evolution.",
+  "aliases": [
+    "com.example.fixed.OldFixed8"
+  ]
+}

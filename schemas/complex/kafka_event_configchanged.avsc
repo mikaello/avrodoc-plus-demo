@@ -1,0 +1,45 @@
+{
+  "type": "record",
+  "name": "ConfigChangedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: ConfigChangedEvent.",
+  "fields": [
+    {
+      "name": "changeId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "oldValue",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "newValue",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "changedBy",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "changedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

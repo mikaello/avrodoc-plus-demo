@@ -1,0 +1,20 @@
+{
+  "type": "array",
+  "items": {
+    "type": "record",
+    "name": "ArrayItem",
+    "namespace": "com.example.arrays",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "value",
+        "type": "double",
+        "default": 0
+      }
+    ]
+  }
+}

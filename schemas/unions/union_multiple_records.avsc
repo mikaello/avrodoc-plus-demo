@@ -1,0 +1,39 @@
+[
+  "null",
+  {
+    "type": "record",
+    "name": "Cat",
+    "namespace": "com.example.pets",
+    "fields": [
+      {
+        "name": "breed",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "Dog",
+    "namespace": "com.example.pets",
+    "fields": [
+      {
+        "name": "breed",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "type": "record",
+    "name": "Bird",
+    "namespace": "com.example.pets",
+    "fields": [
+      {
+        "name": "species",
+        "type": "string",
+        "default": ""
+      }
+    ]
+  }
+]

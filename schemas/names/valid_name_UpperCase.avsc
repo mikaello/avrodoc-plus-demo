@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName_UpperCase",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: UpperCase",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

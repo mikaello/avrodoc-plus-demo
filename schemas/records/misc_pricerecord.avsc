@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "PriceRecord",
+  "namespace": "com.example.pricing",
+  "doc": "PriceRecord record.",
+  "fields": [
+    {
+      "name": "currency",
+      "type": "string",
+      "default": "USD"
+    },
+    {
+      "name": "amount",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "discount",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "taxRate",
+      "type": "float",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "StorageClass",
+  "namespace": "com.example.storage",
+  "doc": "Storage classes.",
+  "symbols": [
+    "STANDARD",
+    "REDUCED_REDUNDANCY",
+    "GLACIER",
+    "DEEP_ARCHIVE"
+  ],
+  "default": "STANDARD"
+}

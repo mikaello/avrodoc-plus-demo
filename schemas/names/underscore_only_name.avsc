@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "_",
+  "namespace": "com.example.names.underscore",
+  "doc": "Single underscore is a valid name per spec: starts with [A-Za-z_].",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

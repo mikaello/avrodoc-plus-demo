@@ -1,0 +1,308 @@
+{
+  "type": "record",
+  "name": "LargeRecord05",
+  "namespace": "com.example.records",
+  "doc": "A large record with 50 fields (variant 5).",
+  "fields": [
+    {
+      "name": "field1",
+      "type": "string",
+      "doc": "Field number 1 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field2",
+      "type": "int",
+      "doc": "Field number 2 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field3",
+      "type": "long",
+      "doc": "Field number 3 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field4",
+      "type": "boolean",
+      "doc": "Field number 4 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field5",
+      "type": "double",
+      "doc": "Field number 5 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field6",
+      "type": "float",
+      "doc": "Field number 6 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field7",
+      "type": "bytes",
+      "doc": "Field number 7 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field8",
+      "type": "string",
+      "doc": "Field number 8 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field9",
+      "type": "int",
+      "doc": "Field number 9 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field10",
+      "type": "long",
+      "doc": "Field number 10 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field11",
+      "type": "boolean",
+      "doc": "Field number 11 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field12",
+      "type": "double",
+      "doc": "Field number 12 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field13",
+      "type": "float",
+      "doc": "Field number 13 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field14",
+      "type": "bytes",
+      "doc": "Field number 14 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field15",
+      "type": "string",
+      "doc": "Field number 15 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field16",
+      "type": "int",
+      "doc": "Field number 16 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field17",
+      "type": "long",
+      "doc": "Field number 17 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field18",
+      "type": "boolean",
+      "doc": "Field number 18 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field19",
+      "type": "double",
+      "doc": "Field number 19 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field20",
+      "type": "float",
+      "doc": "Field number 20 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field21",
+      "type": "bytes",
+      "doc": "Field number 21 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field22",
+      "type": "string",
+      "doc": "Field number 22 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field23",
+      "type": "int",
+      "doc": "Field number 23 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field24",
+      "type": "long",
+      "doc": "Field number 24 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field25",
+      "type": "boolean",
+      "doc": "Field number 25 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field26",
+      "type": "double",
+      "doc": "Field number 26 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field27",
+      "type": "float",
+      "doc": "Field number 27 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field28",
+      "type": "bytes",
+      "doc": "Field number 28 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field29",
+      "type": "string",
+      "doc": "Field number 29 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field30",
+      "type": "int",
+      "doc": "Field number 30 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field31",
+      "type": "long",
+      "doc": "Field number 31 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field32",
+      "type": "boolean",
+      "doc": "Field number 32 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field33",
+      "type": "double",
+      "doc": "Field number 33 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field34",
+      "type": "float",
+      "doc": "Field number 34 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field35",
+      "type": "bytes",
+      "doc": "Field number 35 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field36",
+      "type": "string",
+      "doc": "Field number 36 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field37",
+      "type": "int",
+      "doc": "Field number 37 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field38",
+      "type": "long",
+      "doc": "Field number 38 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field39",
+      "type": "boolean",
+      "doc": "Field number 39 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field40",
+      "type": "double",
+      "doc": "Field number 40 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field41",
+      "type": "float",
+      "doc": "Field number 41 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field42",
+      "type": "bytes",
+      "doc": "Field number 42 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field43",
+      "type": "string",
+      "doc": "Field number 43 of type string.",
+      "default": ""
+    },
+    {
+      "name": "field44",
+      "type": "int",
+      "doc": "Field number 44 of type int.",
+      "default": 0
+    },
+    {
+      "name": "field45",
+      "type": "long",
+      "doc": "Field number 45 of type long.",
+      "default": 0
+    },
+    {
+      "name": "field46",
+      "type": "boolean",
+      "doc": "Field number 46 of type boolean.",
+      "default": false
+    },
+    {
+      "name": "field47",
+      "type": "double",
+      "doc": "Field number 47 of type double.",
+      "default": 0
+    },
+    {
+      "name": "field48",
+      "type": "float",
+      "doc": "Field number 48 of type float.",
+      "default": 0
+    },
+    {
+      "name": "field49",
+      "type": "bytes",
+      "doc": "Field number 49 of type bytes.",
+      "default": ""
+    },
+    {
+      "name": "field50",
+      "type": "string",
+      "doc": "Field number 50 of type string.",
+      "default": ""
+    }
+  ]
+}

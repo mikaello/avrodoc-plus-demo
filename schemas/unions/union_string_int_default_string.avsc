@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "UnionDefaultRecord",
+  "namespace": "com.example.unions",
+  "doc": "Demonstrates union field defaults matching first schema type.",
+  "fields": [
+    {
+      "name": "stringOrInt",
+      "type": [
+        "string",
+        "int"
+      ],
+      "default": "default_string_value",
+      "doc": "Default matches first type (string)."
+    },
+    {
+      "name": "nullOrString",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null,
+      "doc": "Default matches first type (null)."
+    },
+    {
+      "name": "intOrNull",
+      "type": [
+        "int",
+        "null"
+      ],
+      "default": 42,
+      "doc": "Default matches first type (int)."
+    }
+  ]
+}

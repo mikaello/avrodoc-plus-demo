@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "FeatureType",
+  "namespace": "com.example.ml",
+  "doc": "FeatureType enum.",
+  "symbols": [
+    "NUMERIC",
+    "CATEGORICAL",
+    "TEXT",
+    "IMAGE",
+    "AUDIO",
+    "TIMESTAMP"
+  ],
+  "default": "NUMERIC"
+}

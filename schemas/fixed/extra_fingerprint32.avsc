@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "Fingerprint32",
+  "namespace": "com.example.crypto",
+  "size": 32,
+  "doc": "256-bit fingerprint."
+}

@@ -1,0 +1,44 @@
+{
+  "type": "record",
+  "name": "AllSortOrders",
+  "namespace": "com.example.records",
+  "doc": "Record with ascending, descending, and ignore order fields.",
+  "fields": [
+    {
+      "name": "asc1",
+      "type": "int",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "desc1",
+      "type": "long",
+      "order": "descending",
+      "default": 0
+    },
+    {
+      "name": "ign1",
+      "type": "string",
+      "order": "ignore",
+      "default": ""
+    },
+    {
+      "name": "asc2",
+      "type": "double",
+      "order": "ascending",
+      "default": 0
+    },
+    {
+      "name": "desc2",
+      "type": "float",
+      "order": "descending",
+      "default": 0
+    },
+    {
+      "name": "ign2",
+      "type": "bytes",
+      "order": "ignore",
+      "default": ""
+    }
+  ]
+}

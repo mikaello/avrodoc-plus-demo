@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "UnionVariant14",
+  "namespace": "com.example.unions",
+  "doc": "Union variant 14: null | float.",
+  "fields": [
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    }
+  ]
+}

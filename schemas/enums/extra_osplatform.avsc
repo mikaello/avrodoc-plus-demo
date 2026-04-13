@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "OSPlatform",
+  "namespace": "com.example.devices",
+  "doc": "OSPlatform enum.",
+  "symbols": [
+    "ANDROID",
+    "IOS",
+    "WINDOWS",
+    "MACOS",
+    "LINUX",
+    "OTHER"
+  ],
+  "default": "OTHER"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "TimeZoneGroup",
+  "namespace": "com.example.geo",
+  "doc": "TimeZoneGroup enum.",
+  "symbols": [
+    "UTC_MINUS_12",
+    "UTC_MINUS_8",
+    "UTC_MINUS_5",
+    "UTC",
+    "UTC_PLUS_1",
+    "UTC_PLUS_8",
+    "UTC_PLUS_12"
+  ],
+  "default": "UTC"
+}

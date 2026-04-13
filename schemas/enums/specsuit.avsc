@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "SpecSuit",
+  "namespace": "com.example.spec",
+  "doc": "Exact example from Avro spec §Enums.",
+  "symbols": [
+    "SPADES",
+    "HEARTS",
+    "DIAMONDS",
+    "CLUBS"
+  ],
+  "default": "CLUBS"
+}

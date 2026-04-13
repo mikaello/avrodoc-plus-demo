@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "QueueStrategy",
+  "namespace": "com.example.queues",
+  "doc": "QueueStrategy enum.",
+  "symbols": [
+    "FIFO",
+    "LIFO",
+    "PRIORITY",
+    "RANDOM"
+  ],
+  "default": "FIFO"
+}

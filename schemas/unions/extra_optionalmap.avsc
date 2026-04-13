@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "OptionalMap",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: OptionalMap.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

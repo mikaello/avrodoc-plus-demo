@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "NullOrDecimal",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrDecimal.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "decimal",
+          "precision": 18,
+          "scale": 6
+        }
+      ],
+      "default": null
+    }
+  ]
+}

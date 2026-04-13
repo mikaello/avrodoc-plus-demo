@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "OptionalArray",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: OptionalArray.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

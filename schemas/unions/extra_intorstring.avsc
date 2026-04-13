@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "IntOrString",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: IntOrString.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "int",
+        "string"
+      ],
+      "default": 0
+    }
+  ]
+}

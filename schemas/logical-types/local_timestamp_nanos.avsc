@@ -1,0 +1,5 @@
+{
+  "type": "long",
+  "logicalType": "local-timestamp-nanos",
+  "doc": "Local timestamp in nanoseconds (no timezone). Added in Avro 1.12.0. Avro spec §Local Timestamps."
+}

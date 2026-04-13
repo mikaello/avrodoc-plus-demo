@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "SortSpec",
+  "namespace": "com.example.api",
+  "doc": "SortSpec record.",
+  "fields": [
+    {
+      "name": "field",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "direction",
+      "type": "string",
+      "default": "ASC"
+    }
+  ]
+}

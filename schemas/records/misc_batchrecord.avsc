@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "BatchRecord",
+  "namespace": "com.example.batch",
+  "doc": "BatchRecord record.",
+  "fields": [
+    {
+      "name": "batchId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "total",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "processed",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "failed",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "startedAt",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "finishedAt",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

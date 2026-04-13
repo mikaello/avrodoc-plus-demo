@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "CronSchedule",
+  "namespace": "com.example.jobs",
+  "doc": "CronSchedule enum.",
+  "symbols": [
+    "MINUTELY",
+    "HOURLY",
+    "DAILY",
+    "WEEKLY",
+    "MONTHLY",
+    "YEARLY"
+  ],
+  "default": "DAILY"
+}

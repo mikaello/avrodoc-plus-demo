@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "DependencyRecord",
+  "namespace": "com.example.devops",
+  "doc": "DependencyRecord record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "scope",
+      "type": "string",
+      "default": "runtime"
+    },
+    {
+      "name": "vulnerable",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

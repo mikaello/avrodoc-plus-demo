@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "BetaRecord",
+  "namespace": "com.example.a.b",
+  "doc": "Fullname: com.example.a.b.BetaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

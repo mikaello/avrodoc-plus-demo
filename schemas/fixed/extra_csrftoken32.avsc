@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "CSRFToken32",
+  "namespace": "com.example.auth",
+  "size": 32,
+  "doc": "CSRF token (32 bytes)."
+}

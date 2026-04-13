@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "TLSVersion",
+  "namespace": "com.example.security",
+  "doc": "TLS versions.",
+  "symbols": [
+    "TLS_1_0",
+    "TLS_1_1",
+    "TLS_1_2",
+    "TLS_1_3"
+  ],
+  "default": "TLS_1_3"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "PublishState",
+  "namespace": "com.example.content",
+  "doc": "PublishState enum.",
+  "symbols": [
+    "DRAFT",
+    "SCHEDULED",
+    "PUBLISHED",
+    "UNLISTED",
+    "PRIVATE",
+    "DELETED"
+  ],
+  "default": "DRAFT"
+}

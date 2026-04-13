@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "IPv6Address",
+  "namespace": "com.example.fixed",
+  "size": 16,
+  "doc": "IPv6 address (16 bytes)."
+}

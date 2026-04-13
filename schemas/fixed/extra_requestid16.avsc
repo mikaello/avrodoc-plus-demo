@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "RequestId16",
+  "namespace": "com.example.tracing",
+  "size": 16,
+  "doc": "HTTP request correlation ID (16 bytes)."
+}

@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "DeltaRecord",
+  "namespace": "com.example.a.b.c.d",
+  "doc": "Fullname: com.example.a.b.c.d.DeltaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

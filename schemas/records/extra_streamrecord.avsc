@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "StreamRecord",
+  "namespace": "com.example.streams",
+  "doc": "StreamRecord record.",
+  "fields": [
+    {
+      "name": "streamId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "partition",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "offset",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "key",
+      "type": [
+        "null",
+        "bytes"
+      ],
+      "default": null
+    },
+    {
+      "name": "value",
+      "type": "bytes",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

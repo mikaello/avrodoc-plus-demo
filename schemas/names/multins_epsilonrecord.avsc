@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "EpsilonRecord",
+  "namespace": "org.apache.avro.test",
+  "doc": "Fullname: org.apache.avro.test.EpsilonRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SessionToken32",
+  "namespace": "com.example.auth",
+  "size": 32,
+  "doc": "Session token (32 bytes)."
+}

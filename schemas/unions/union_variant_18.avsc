@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "UnionVariant18",
+  "namespace": "com.example.unions",
+  "doc": "Union variant 18: string | int.",
+  "fields": [
+    {
+      "name": "value",
+      "type": [
+        "string",
+        "int"
+      ],
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "BitcoinKey",
+  "namespace": "com.example.crypto",
+  "size": 33,
+  "doc": "Compressed Bitcoin public key (33 bytes)."
+}

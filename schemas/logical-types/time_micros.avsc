@@ -1,0 +1,5 @@
+{
+  "type": "long",
+  "logicalType": "time-micros",
+  "doc": "Time of day in microseconds after midnight. Avro spec §Time (microsecond precision)."
+}

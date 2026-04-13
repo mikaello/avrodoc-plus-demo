@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "RetryPolicy",
+  "namespace": "com.example.resilience",
+  "doc": "RetryPolicy record.",
+  "fields": [
+    {
+      "name": "maxAttempts",
+      "type": "int",
+      "default": 3
+    },
+    {
+      "name": "initialDelayMs",
+      "type": "long",
+      "default": 1000
+    },
+    {
+      "name": "multiplier",
+      "type": "double",
+      "default": 2
+    },
+    {
+      "name": "maxDelayMs",
+      "type": "long",
+      "default": 30000
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "FloatOrDouble",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: FloatOrDouble.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "float",
+        "double"
+      ],
+      "default": 0
+    }
+  ]
+}

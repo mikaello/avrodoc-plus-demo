@@ -1,0 +1,27 @@
+{
+  "type": "record",
+  "name": "ModernRecord",
+  "namespace": "com.example.v2",
+  "doc": "Modern version of a record that used to live in a different namespace.",
+  "aliases": [
+    "com.example.v1.LegacyRecord",
+    "com.acme.OldRecord"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "score",
+      "type": "double",
+      "default": 0
+    }
+  ]
+}

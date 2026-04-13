@@ -1,0 +1,7 @@
+{
+  "type": "bytes",
+  "logicalType": "decimal",
+  "precision": 38,
+  "scale": 10,
+  "doc": "Maximum precision decimal(38,10) on bytes."
+}

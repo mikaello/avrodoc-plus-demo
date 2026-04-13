@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "NestedCollections",
+  "namespace": "com.example.complex",
+  "doc": "Array of maps of arrays of records — complex nesting.",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "map",
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "record",
+              "name": "LeafRecord",
+              "namespace": "com.example.complex",
+              "fields": [
+                {
+                  "name": "key",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "value",
+                  "type": "double",
+                  "default": 0
+                }
+              ]
+            }
+          }
+        }
+      },
+      "default": []
+    }
+  ]
+}

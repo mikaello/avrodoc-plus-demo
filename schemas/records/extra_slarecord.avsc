@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "SLARecord",
+  "namespace": "com.example.ops",
+  "doc": "SLARecord record.",
+  "fields": [
+    {
+      "name": "service",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "metric",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "target",
+      "type": "double",
+      "default": 99.9
+    },
+    {
+      "name": "actual",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "period",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    }
+  ]
+}

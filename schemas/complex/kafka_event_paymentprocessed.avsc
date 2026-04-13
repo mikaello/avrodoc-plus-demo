@@ -1,0 +1,43 @@
+{
+  "type": "record",
+  "name": "PaymentProcessedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: PaymentProcessedEvent.",
+  "fields": [
+    {
+      "name": "paymentId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "orderId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "amount",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      }
+    },
+    {
+      "name": "processedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

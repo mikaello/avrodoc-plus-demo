@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "name": "NullNamespaceEnum",
+  "doc": "Enum with null namespace — fullname is just \"NullNamespaceEnum\".",
+  "symbols": [
+    "A",
+    "B"
+  ],
+  "default": "A"
+}

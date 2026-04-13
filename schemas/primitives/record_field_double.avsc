@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfDouble",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single double field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "double",
+      "doc": "The double value.",
+      "default": 0
+    }
+  ]
+}

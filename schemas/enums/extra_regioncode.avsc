@@ -1,0 +1,17 @@
+{
+  "type": "enum",
+  "name": "RegionCode",
+  "namespace": "com.example.geo",
+  "doc": "RegionCode enum.",
+  "symbols": [
+    "US_EAST",
+    "US_WEST",
+    "EU_WEST",
+    "EU_CENTRAL",
+    "APAC",
+    "SA",
+    "AF",
+    "ME"
+  ],
+  "default": "US_EAST"
+}

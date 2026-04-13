@@ -1,0 +1,46 @@
+{
+  "type": "record",
+  "name": "SessionStartedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: SessionStartedEvent.",
+  "fields": [
+    {
+      "name": "sessionId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "userId",
+      "type": [
+        "null",
+        {
+          "type": "string",
+          "logicalType": "uuid"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "ip",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "userAgent",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "startedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

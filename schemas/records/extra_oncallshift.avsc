@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "OnCallShift",
+  "namespace": "com.example.ops",
+  "doc": "OnCallShift record.",
+  "fields": [
+    {
+      "name": "shiftId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "engineer",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "startAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "endAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

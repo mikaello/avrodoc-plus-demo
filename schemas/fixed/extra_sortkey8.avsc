@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SortKey8",
+  "namespace": "com.example.keys",
+  "size": 8,
+  "doc": "Sort key (8 bytes)."
+}

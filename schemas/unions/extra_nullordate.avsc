@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "NullOrDate",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrDate.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "int",
+          "logicalType": "date"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

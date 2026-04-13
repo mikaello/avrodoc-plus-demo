@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "AggregateSpec",
+  "namespace": "com.example.analytics",
+  "doc": "AggregateSpec record.",
+  "fields": [
+    {
+      "name": "field",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "function",
+      "type": "string",
+      "default": "COUNT"
+    },
+    {
+      "name": "alias",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

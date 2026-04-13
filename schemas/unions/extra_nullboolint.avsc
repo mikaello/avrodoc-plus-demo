@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "NullBoolInt",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullBoolInt.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "boolean",
+        "int"
+      ],
+      "default": null
+    }
+  ]
+}

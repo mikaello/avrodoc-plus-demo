@@ -1,0 +1,8 @@
+{
+  "type": "fixed",
+  "name": "Avroduration",
+  "namespace": "com.example.logical",
+  "size": 12,
+  "logicalType": "duration",
+  "doc": "Duration: fixed(12) with 3 unsigned little-endian 32-bit ints (months, days, milliseconds). Avro spec §Duration."
+}

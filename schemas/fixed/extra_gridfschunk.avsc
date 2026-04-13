@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "GridFSChunk",
+  "namespace": "com.example.db",
+  "size": 255,
+  "doc": "GridFS chunk identifier (255 bytes)."
+}

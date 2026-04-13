@@ -1,0 +1,110 @@
+{
+  "type": "record",
+  "name": "KitchenSink",
+  "namespace": "com.example.complex",
+  "doc": "One record containing every Avro complex type and a mix of logical types.",
+  "fields": [
+    {
+      "name": "str",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "num",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "flag",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "ratio",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "raw",
+      "type": "bytes",
+      "default": ""
+    },
+    {
+      "name": "status",
+      "type": {
+        "type": "enum",
+        "name": "KSStatus",
+        "namespace": "com.example.complex",
+        "symbols": [
+          "OPEN",
+          "CLOSED"
+        ],
+        "default": "OPEN"
+      },
+      "default": "OPEN"
+    },
+    {
+      "name": "hash",
+      "type": {
+        "type": "fixed",
+        "name": "KSHash",
+        "namespace": "com.example.complex",
+        "size": 16
+      }
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "attrs",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "optVal",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "date",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    },
+    {
+      "name": "ts",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "price",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      }
+    },
+    {
+      "name": "uuid",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    }
+  ]
+}

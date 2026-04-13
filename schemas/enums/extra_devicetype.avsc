@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "DeviceType",
+  "namespace": "com.example.devices",
+  "doc": "DeviceType enum.",
+  "symbols": [
+    "MOBILE",
+    "TABLET",
+    "DESKTOP",
+    "SMART_TV",
+    "IOT",
+    "WEARABLE"
+  ],
+  "default": "DESKTOP"
+}

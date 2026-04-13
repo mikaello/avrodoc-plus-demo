@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfString",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single string field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "string",
+      "doc": "The string value.",
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "StringRecord",
+  "namespace": "com.example.names.primitivenames",
+  "doc": "Uses \"string\" as a simple name but inside a namespace — legal per spec.",
+  "fields": [
+    {
+      "name": "v",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

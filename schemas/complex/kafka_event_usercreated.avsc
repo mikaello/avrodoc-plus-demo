@@ -1,0 +1,37 @@
+{
+  "type": "record",
+  "name": "UserCreatedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: UserCreatedEvent.",
+  "fields": [
+    {
+      "name": "userId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "lastName",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "createdAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

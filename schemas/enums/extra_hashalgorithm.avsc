@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "HashAlgorithm",
+  "namespace": "com.example.crypto",
+  "doc": "HashAlgorithm enum.",
+  "symbols": [
+    "MD5",
+    "SHA1",
+    "SHA256",
+    "SHA512",
+    "BLAKE2",
+    "ARGON2"
+  ],
+  "default": "SHA256"
+}

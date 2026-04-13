@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "AESKey256",
+  "namespace": "com.example.fixed",
+  "size": 32,
+  "doc": "AES-256 key."
+}

@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfNull",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single null field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "null",
+      "doc": "The null value.",
+      "default": null
+    }
+  ]
+}

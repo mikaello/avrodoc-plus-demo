@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "DeploymentRecord",
+  "namespace": "com.example.devops",
+  "doc": "DeploymentRecord record.",
+  "fields": [
+    {
+      "name": "deployId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "service",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "environment",
+      "type": "string",
+      "default": "prod"
+    },
+    {
+      "name": "deployedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "deployedBy",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

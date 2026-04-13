@@ -1,0 +1,21 @@
+{
+  "type": "enum",
+  "name": "Month",
+  "namespace": "com.example.enums",
+  "doc": "Months of the year.",
+  "symbols": [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC"
+  ],
+  "default": "JAN"
+}

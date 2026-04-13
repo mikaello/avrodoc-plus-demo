@@ -1,0 +1,42 @@
+{
+  "type": "record",
+  "name": "ChangeRequest",
+  "namespace": "com.example.ops",
+  "doc": "ChangeRequest record.",
+  "fields": [
+    {
+      "name": "crId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "approver",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "scheduledAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "approved",
+      "type": "boolean",
+      "default": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "MacAddress",
+  "namespace": "com.example.fixed",
+  "size": 6,
+  "doc": "MAC address (6 bytes)."
+}

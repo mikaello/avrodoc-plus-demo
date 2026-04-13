@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "NewRecordName",
+  "namespace": "com.example.aliases",
+  "doc": "Record renamed; old name kept as alias for schema evolution.",
+  "aliases": [
+    "com.example.aliases.OldRecordName"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "type": "bytes",
+      "default": ""
+    }
+  ]
+}

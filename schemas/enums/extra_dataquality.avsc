@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "DataQuality",
+  "namespace": "com.example.data",
+  "doc": "DataQuality enum.",
+  "symbols": [
+    "GOOD",
+    "ACCEPTABLE",
+    "POOR",
+    "UNKNOWN"
+  ],
+  "default": "UNKNOWN"
+}

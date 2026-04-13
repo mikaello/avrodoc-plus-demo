@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "FlagMap",
+  "namespace": "com.example.maps",
+  "doc": "Record with a map of boolean values.",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": "boolean"
+      },
+      "default": {}
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName_lowerCase",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: lowerCase",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

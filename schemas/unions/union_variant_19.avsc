@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "UnionVariant19",
+  "namespace": "com.example.unions",
+  "doc": "Union variant 19: string | long.",
+  "fields": [
+    {
+      "name": "value",
+      "type": [
+        "string",
+        "long"
+      ],
+      "default": ""
+    }
+  ]
+}

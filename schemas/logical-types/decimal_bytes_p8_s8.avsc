@@ -1,0 +1,7 @@
+{
+  "type": "bytes",
+  "logicalType": "decimal",
+  "precision": 8,
+  "scale": 8,
+  "doc": "Pure fractional decimal(8,8) — scale equals precision."
+}

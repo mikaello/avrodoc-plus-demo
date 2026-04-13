@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "name": "Singleton",
+  "namespace": "com.example.enums",
+  "doc": "An enum with a single symbol.",
+  "symbols": [
+    "ONLY"
+  ],
+  "default": "ONLY"
+}

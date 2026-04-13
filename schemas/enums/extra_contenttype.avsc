@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "ContentType",
+  "namespace": "com.example.content",
+  "doc": "ContentType enum.",
+  "symbols": [
+    "ARTICLE",
+    "VIDEO",
+    "PODCAST",
+    "IMAGE",
+    "DOCUMENT",
+    "CODE"
+  ],
+  "default": "ARTICLE"
+}

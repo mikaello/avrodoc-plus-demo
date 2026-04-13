@@ -1,0 +1,11 @@
+{
+  "type": "enum",
+  "name": "SortDirection",
+  "namespace": "com.example.api",
+  "doc": "SortDirection enum.",
+  "symbols": [
+    "ASC",
+    "DESC"
+  ],
+  "default": "ASC"
+}

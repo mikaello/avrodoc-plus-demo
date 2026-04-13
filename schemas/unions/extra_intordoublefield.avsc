@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "IntOrDoubleField",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: IntOrDoubleField.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "int",
+        "double"
+      ],
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "ObjectId",
+  "namespace": "com.example.db",
+  "size": 12,
+  "doc": "MongoDB-style ObjectId (12 bytes)."
+}

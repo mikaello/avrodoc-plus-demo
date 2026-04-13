@@ -1,0 +1,9 @@
+{
+  "type": "map",
+  "values": {
+    "type": "fixed",
+    "name": "MapFixed16",
+    "namespace": "com.example.maps",
+    "size": 16
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "GCMTag16",
+  "namespace": "com.example.crypto",
+  "size": 16,
+  "doc": "GCM authentication tag (16 bytes)."
+}

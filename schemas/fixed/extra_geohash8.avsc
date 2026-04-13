@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "GeoHash8",
+  "namespace": "com.example.geo",
+  "size": 8,
+  "doc": "GeoHash encoded as 8-byte fixed."
+}

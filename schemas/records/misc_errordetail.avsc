@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "ErrorDetail",
+  "namespace": "com.example.errors",
+  "doc": "ErrorDetail record.",
+  "fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "path",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "details",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    }
+  ]
+}

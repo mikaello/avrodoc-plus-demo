@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "ReactionType",
+  "namespace": "com.example.social",
+  "doc": "ReactionType enum.",
+  "symbols": [
+    "LIKE",
+    "LOVE",
+    "HAHA",
+    "WOW",
+    "SAD",
+    "ANGRY"
+  ],
+  "default": "LIKE"
+}

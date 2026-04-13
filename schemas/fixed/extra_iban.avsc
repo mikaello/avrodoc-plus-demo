@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "IBAN",
+  "namespace": "com.example.banking",
+  "size": 34,
+  "doc": "IBAN bank account number (max 34 chars)."
+}

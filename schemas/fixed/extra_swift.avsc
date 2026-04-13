@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SWIFT",
+  "namespace": "com.example.banking",
+  "size": 11,
+  "doc": "SWIFT/BIC code (11 bytes)."
+}

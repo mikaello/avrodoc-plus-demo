@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SHA1Hash",
+  "namespace": "com.example.fixed",
+  "size": 20,
+  "doc": "SHA-1 hash (20 bytes)."
+}

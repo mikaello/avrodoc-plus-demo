@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "AlphaRecord",
+  "namespace": "com.example.a",
+  "doc": "Fullname: com.example.a.AlphaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

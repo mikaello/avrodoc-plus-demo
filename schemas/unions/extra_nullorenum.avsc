@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "NullOrEnum",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrEnum.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "name": "ExtraUnionEnum",
+          "namespace": "com.example.unions.extra",
+          "symbols": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "default": "X"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

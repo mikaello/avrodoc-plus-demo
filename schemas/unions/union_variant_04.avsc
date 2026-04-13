@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "UnionVariant04",
+  "namespace": "com.example.unions",
+  "doc": "Union variant 4: string | bytes.",
+  "fields": [
+    {
+      "name": "value",
+      "type": [
+        "string",
+        "bytes"
+      ],
+      "default": ""
+    }
+  ]
+}

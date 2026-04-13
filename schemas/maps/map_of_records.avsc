@@ -1,0 +1,20 @@
+{
+  "type": "map",
+  "values": {
+    "type": "record",
+    "name": "MapValueRecord",
+    "namespace": "com.example.maps",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "score",
+        "type": "double",
+        "default": 0
+      }
+    ]
+  }
+}

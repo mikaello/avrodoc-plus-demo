@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "IntMatrix",
+  "namespace": "com.example.arrays",
+  "doc": "Record with an array of int.",
+  "fields": [
+    {
+      "name": "items",
+      "type": {
+        "type": "array",
+        "items": "int"
+      },
+      "default": []
+    },
+    {
+      "name": "count",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

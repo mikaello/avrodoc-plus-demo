@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "IV16",
+  "namespace": "com.example.crypto",
+  "size": 16,
+  "doc": "AES initialisation vector (16 bytes)."
+}

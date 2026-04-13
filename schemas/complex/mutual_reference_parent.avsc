@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "Parent",
+  "namespace": "com.example.complex",
+  "doc": "Parent record with an inline child definition.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "children",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Child",
+          "namespace": "com.example.complex",
+          "doc": "Child record nested inside Parent.",
+          "fields": [
+            {
+              "name": "id",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "default": ""
+            },
+            {
+              "name": "parentId",
+              "type": "string",
+              "default": ""
+            }
+          ]
+        }
+      },
+      "default": []
+    }
+  ]
+}

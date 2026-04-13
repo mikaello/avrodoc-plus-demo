@@ -1,0 +1,5 @@
+{
+  "type": "string",
+  "logicalType": "uuid",
+  "doc": "UUID v4 as string (RFC-4122). Avro spec §UUID."
+}

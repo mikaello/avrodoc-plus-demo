@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "CRC32Checksum",
+  "namespace": "com.example.fixed",
+  "size": 4,
+  "doc": "CRC-32 checksum."
+}

@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "FeatureFlag",
+  "namespace": "com.example.flags",
+  "doc": "FeatureFlag record.",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "enabled",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "rollout",
+      "type": "float",
+      "default": 0
+    },
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "HealthCheck",
+  "namespace": "com.example.health",
+  "doc": "HealthCheck record.",
+  "fields": [
+    {
+      "name": "service",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "UP"
+    },
+    {
+      "name": "latencyMs",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "checkedAt",
+      "type": "long",
+      "default": 0
+    }
+  ]
+}

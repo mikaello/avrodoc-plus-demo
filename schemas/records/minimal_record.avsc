@@ -1,0 +1,6 @@
+{
+  "type": "record",
+  "name": "MinimalRecord",
+  "namespace": "com.example.records",
+  "fields": []
+}

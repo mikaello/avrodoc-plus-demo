@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "IBAN16",
+  "namespace": "com.example.banking",
+  "size": 16,
+  "doc": "Short IBAN variant (16 bytes)."
+}

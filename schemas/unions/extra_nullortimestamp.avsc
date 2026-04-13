@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "NullOrTimestamp",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrTimestamp.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

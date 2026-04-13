@@ -1,0 +1,141 @@
+{
+  "type": "record",
+  "name": "AllLogicalTypes",
+  "namespace": "com.example.logical",
+  "doc": "Record with a field for every Avro 1.12.1 logical type.",
+  "fields": [
+    {
+      "name": "decimalBytes",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      },
+      "doc": "decimal on bytes"
+    },
+    {
+      "name": "decimalFixed",
+      "type": {
+        "type": "fixed",
+        "name": "AllLogDecFixed",
+        "namespace": "com.example.logical",
+        "size": 4,
+        "logicalType": "decimal",
+        "precision": 9,
+        "scale": 4
+      },
+      "doc": "decimal on fixed"
+    },
+    {
+      "name": "bigDecimal",
+      "type": {
+        "type": "bytes",
+        "logicalType": "big-decimal"
+      },
+      "doc": "big-decimal on bytes"
+    },
+    {
+      "name": "uuidStr",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      },
+      "doc": "uuid on string"
+    },
+    {
+      "name": "uuidFixed",
+      "type": {
+        "type": "fixed",
+        "name": "AllLogUUIDFixed",
+        "namespace": "com.example.logical",
+        "size": 16,
+        "logicalType": "uuid"
+      },
+      "doc": "uuid on fixed(16)"
+    },
+    {
+      "name": "date",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      },
+      "doc": "date"
+    },
+    {
+      "name": "timeMillis",
+      "type": {
+        "type": "int",
+        "logicalType": "time-millis"
+      },
+      "doc": "time-millis"
+    },
+    {
+      "name": "timeMicros",
+      "type": {
+        "type": "long",
+        "logicalType": "time-micros"
+      },
+      "doc": "time-micros"
+    },
+    {
+      "name": "tsMillis",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      "doc": "timestamp-millis"
+    },
+    {
+      "name": "tsMicros",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      },
+      "doc": "timestamp-micros"
+    },
+    {
+      "name": "tsNanos",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-nanos"
+      },
+      "doc": "timestamp-nanos (Avro 1.12+)"
+    },
+    {
+      "name": "localTsMillis",
+      "type": {
+        "type": "long",
+        "logicalType": "local-timestamp-millis"
+      },
+      "doc": "local-timestamp-millis"
+    },
+    {
+      "name": "localTsMicros",
+      "type": {
+        "type": "long",
+        "logicalType": "local-timestamp-micros"
+      },
+      "doc": "local-timestamp-micros"
+    },
+    {
+      "name": "localTsNanos",
+      "type": {
+        "type": "long",
+        "logicalType": "local-timestamp-nanos"
+      },
+      "doc": "local-timestamp-nanos (Avro 1.12+)"
+    },
+    {
+      "name": "duration",
+      "type": {
+        "type": "fixed",
+        "name": "AllLogDuration",
+        "namespace": "com.example.logical",
+        "size": 12,
+        "logicalType": "duration"
+      },
+      "doc": "duration on fixed(12)"
+    }
+  ]
+}

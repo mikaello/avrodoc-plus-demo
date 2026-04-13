@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "DurationFixed",
+  "namespace": "com.example.fixed",
+  "size": 12,
+  "doc": "Duration: 3 little-endian uint32s (months, days, ms). Spec §Duration logical type."
+}

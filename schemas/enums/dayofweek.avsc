@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "DayOfWeek",
+  "namespace": "com.example.enums",
+  "doc": "Days of the week.",
+  "symbols": [
+    "MON",
+    "TUE",
+    "WED",
+    "THU",
+    "FRI",
+    "SAT",
+    "SUN"
+  ],
+  "default": "MON"
+}

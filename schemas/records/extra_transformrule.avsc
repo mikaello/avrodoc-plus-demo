@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "TransformRule",
+  "namespace": "com.example.etl",
+  "doc": "TransformRule record.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sourceField",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "targetField",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "expression",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

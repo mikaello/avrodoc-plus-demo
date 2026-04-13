@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "RecordWithUpdatedDate",
+  "namespace": "com.example.logical",
+  "doc": "Record demonstrating a date logical type field.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      },
+      "doc": "A date value."
+    }
+  ]
+}

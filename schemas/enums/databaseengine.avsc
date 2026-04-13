@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "DatabaseEngine",
+  "namespace": "com.example.db",
+  "doc": "Database engines.",
+  "symbols": [
+    "POSTGRES",
+    "MYSQL",
+    "SQLITE",
+    "MONGODB",
+    "REDIS",
+    "CASSANDRA"
+  ],
+  "default": "POSTGRES"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "OrderStatus",
+  "namespace": "com.example.orders",
+  "doc": "OrderStatus enum.",
+  "symbols": [
+    "PENDING",
+    "CONFIRMED",
+    "PROCESSING",
+    "SHIPPED",
+    "DELIVERED",
+    "CANCELLED",
+    "RETURNED"
+  ],
+  "default": "PENDING"
+}

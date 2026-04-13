@@ -1,0 +1,20 @@
+{
+  "type": "record",
+  "name": "AliasRecord08",
+  "namespace": "com.example.aliases.misc",
+  "doc": "Misc alias record 8.",
+  "aliases": [
+    "com.example.aliases.misc.Old08",
+    "LegacyAlias8"
+  ],
+  "fields": [
+    {
+      "name": "field8",
+      "type": "string",
+      "aliases": [
+        "old_field_8"
+      ],
+      "default": ""
+    }
+  ]
+}

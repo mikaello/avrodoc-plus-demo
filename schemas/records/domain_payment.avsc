@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "Payment",
+  "namespace": "com.example.domain.payment",
+  "doc": "A Payment domain record.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Unique Payment ID.",
+      "default": ""
+    },
+    {
+      "name": "createdAt",
+      "type": "long",
+      "doc": "Creation timestamp (epoch ms).",
+      "default": 0
+    },
+    {
+      "name": "updatedAt",
+      "type": "long",
+      "doc": "Last update timestamp.",
+      "default": 0
+    },
+    {
+      "name": "description",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Optional description.",
+      "default": null
+    },
+    {
+      "name": "active",
+      "type": "boolean",
+      "doc": "Whether the record is active.",
+      "default": true
+    }
+  ]
+}

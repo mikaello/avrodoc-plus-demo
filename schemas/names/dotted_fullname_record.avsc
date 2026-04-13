@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "com.example.names.DottedFullname",
+  "namespace": "ignored.namespace",
+  "doc": "Fullname comes from the dotted name attribute; namespace attr is ignored.",
+  "fields": [
+    {
+      "name": "x",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

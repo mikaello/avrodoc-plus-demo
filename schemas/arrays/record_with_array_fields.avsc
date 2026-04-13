@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "RecordWithArrays",
+  "namespace": "com.example.arrays",
+  "doc": "Record demonstrating array fields with defaults.",
+  "fields": [
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "counts",
+      "type": {
+        "type": "array",
+        "items": "int"
+      },
+      "default": []
+    },
+    {
+      "name": "scores",
+      "type": {
+        "type": "array",
+        "items": "double"
+      },
+      "default": []
+    },
+    {
+      "name": "flags",
+      "type": {
+        "type": "array",
+        "items": "boolean"
+      },
+      "default": []
+    }
+  ]
+}

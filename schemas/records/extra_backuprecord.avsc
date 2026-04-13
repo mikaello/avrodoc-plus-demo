@@ -1,0 +1,45 @@
+{
+  "type": "record",
+  "name": "BackupRecord",
+  "namespace": "com.example.ops",
+  "doc": "BackupRecord record.",
+  "fields": [
+    {
+      "name": "backupId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "resource",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sizeBytes",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "checksum",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "createdAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "expiresAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

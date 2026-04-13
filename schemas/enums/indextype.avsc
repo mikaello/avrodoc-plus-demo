@@ -1,0 +1,16 @@
+{
+  "type": "enum",
+  "name": "IndexType",
+  "namespace": "com.example.db",
+  "doc": "Database index types.",
+  "symbols": [
+    "BTREE",
+    "HASH",
+    "GIN",
+    "GIST",
+    "SPGIST",
+    "BRIN",
+    "FULLTEXT"
+  ],
+  "default": "BTREE"
+}

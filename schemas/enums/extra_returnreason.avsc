@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "ReturnReason",
+  "namespace": "com.example.ecommerce",
+  "doc": "ReturnReason enum.",
+  "symbols": [
+    "DAMAGED",
+    "WRONG_ITEM",
+    "NOT_AS_DESCRIBED",
+    "CHANGED_MIND",
+    "DEFECTIVE",
+    "OTHER"
+  ],
+  "default": "OTHER"
+}

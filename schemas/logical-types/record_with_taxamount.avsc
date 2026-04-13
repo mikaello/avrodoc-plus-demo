@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "RecordWithTaxAmount",
+  "namespace": "com.example.logical",
+  "doc": "Record demonstrating a decimal logical type field.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      },
+      "doc": "A decimal value."
+    }
+  ]
+}

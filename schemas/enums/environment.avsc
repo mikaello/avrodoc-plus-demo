@@ -1,0 +1,12 @@
+{
+  "type": "enum",
+  "name": "Environment",
+  "namespace": "com.example.enums",
+  "doc": "Deployment environments.",
+  "symbols": [
+    "DEV",
+    "STAGING",
+    "PROD"
+  ],
+  "default": "DEV"
+}

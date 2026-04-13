@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "NewEnumName",
+  "namespace": "com.example.aliases",
+  "doc": "Enum renamed; old name as alias.",
+  "aliases": [
+    "com.example.aliases.OldEnumName"
+  ],
+  "symbols": [
+    "P",
+    "Q",
+    "R"
+  ],
+  "default": "P"
+}

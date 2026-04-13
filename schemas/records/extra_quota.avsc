@@ -1,0 +1,30 @@
+{
+  "type": "record",
+  "name": "Quota",
+  "namespace": "com.example.limits",
+  "doc": "Quota record.",
+  "fields": [
+    {
+      "name": "resource",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "limit",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "used",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "resetAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

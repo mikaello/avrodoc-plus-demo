@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "ServiceHealth",
+  "namespace": "com.example.ops",
+  "doc": "ServiceHealth record.",
+  "fields": [
+    {
+      "name": "service",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "instance",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "healthy",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "cpu",
+      "type": "float",
+      "default": 0
+    },
+    {
+      "name": "memMb",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "checkedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

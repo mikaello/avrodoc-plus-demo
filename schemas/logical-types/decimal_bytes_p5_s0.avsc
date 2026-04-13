@@ -1,0 +1,7 @@
+{
+  "type": "bytes",
+  "logicalType": "decimal",
+  "precision": 5,
+  "scale": 0,
+  "doc": "Integer-like decimal(5,0) — scale 0."
+}

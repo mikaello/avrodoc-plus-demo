@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "InventoryUpdatedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: InventoryUpdatedEvent.",
+  "fields": [
+    {
+      "name": "productId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "delta",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "reason",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "updatedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

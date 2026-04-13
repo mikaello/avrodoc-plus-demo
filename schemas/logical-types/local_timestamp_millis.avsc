@@ -1,0 +1,5 @@
+{
+  "type": "long",
+  "logicalType": "local-timestamp-millis",
+  "doc": "Local timestamp in milliseconds (no timezone). Avro spec §Local Timestamps."
+}

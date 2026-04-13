@@ -1,0 +1,52 @@
+{
+  "type": "record",
+  "name": "TypedRegistry",
+  "namespace": "com.example.complex",
+  "doc": "A map from string keys to heterogeneous records (union values).",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "version",
+      "type": "int",
+      "default": 1
+    },
+    {
+      "name": "entries",
+      "type": {
+        "type": "map",
+        "values": [
+          "null",
+          {
+            "type": "record",
+            "name": "RegistryEntryA",
+            "namespace": "com.example.complex",
+            "fields": [
+              {
+                "name": "data",
+                "type": "string",
+                "default": ""
+              }
+            ]
+          },
+          {
+            "type": "record",
+            "name": "RegistryEntryB",
+            "namespace": "com.example.complex",
+            "fields": [
+              {
+                "name": "value",
+                "type": "long",
+                "default": 0
+              }
+            ]
+          }
+        ]
+      },
+      "default": {}
+    }
+  ]
+}

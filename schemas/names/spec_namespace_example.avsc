@@ -1,0 +1,54 @@
+{
+  "type": "record",
+  "name": "Example",
+  "doc": "Reproduces the spec §Names namespace inheritance example.",
+  "fields": [
+    {
+      "name": "inheritNull",
+      "type": {
+        "type": "enum",
+        "name": "Simple",
+        "doc": "Inherits null namespace from Example. Fullname: Simple.",
+        "symbols": [
+          "a",
+          "b"
+        ]
+      },
+      "default": "a"
+    },
+    {
+      "name": "explicitNamespace",
+      "type": {
+        "type": "fixed",
+        "name": "Simple",
+        "namespace": "explicit",
+        "doc": "Explicit namespace. Fullname: explicit.Simple (different from above).",
+        "size": 12
+      }
+    },
+    {
+      "name": "fullName",
+      "type": {
+        "type": "record",
+        "name": "a.full.Name",
+        "namespace": "ignored",
+        "doc": "Dotted fullname; namespace ignored. Fullname: a.full.Name.",
+        "fields": [
+          {
+            "name": "inheritNamespace",
+            "type": {
+              "type": "enum",
+              "name": "Understanding",
+              "doc": "Inherits a.full namespace. Fullname: a.full.Understanding.",
+              "symbols": [
+                "d",
+                "e"
+              ]
+            },
+            "default": "d"
+          }
+        ]
+      }
+    }
+  ]
+}

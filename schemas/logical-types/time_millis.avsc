@@ -1,0 +1,5 @@
+{
+  "type": "int",
+  "logicalType": "time-millis",
+  "doc": "Time of day in milliseconds after midnight. Avro spec §Time (millisecond precision)."
+}

@@ -1,0 +1,51 @@
+{
+  "type": "record",
+  "name": "JobRecord",
+  "namespace": "com.example.jobs",
+  "doc": "JobRecord record.",
+  "fields": [
+    {
+      "name": "jobId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "default": "QUEUED"
+    },
+    {
+      "name": "attempts",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "maxAttempts",
+      "type": "int",
+      "default": 3
+    },
+    {
+      "name": "scheduledAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "completedAt",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

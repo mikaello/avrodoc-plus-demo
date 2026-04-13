@@ -1,0 +1,34 @@
+{
+  "type": "error",
+  "name": "ProtocolError",
+  "namespace": "com.example.complex",
+  "doc": "An error type as used in Avro protocol definitions.",
+  "fields": [
+    {
+      "name": "code",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "details",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "cause",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "record",
+  "name": "RecordWithMaps",
+  "namespace": "com.example.maps",
+  "doc": "Record demonstrating map fields with defaults.",
+  "fields": [
+    {
+      "name": "labels",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "counters",
+      "type": {
+        "type": "map",
+        "values": "long"
+      },
+      "default": {}
+    },
+    {
+      "name": "ratios",
+      "type": {
+        "type": "map",
+        "values": "double"
+      },
+      "default": {}
+    },
+    {
+      "name": "flags",
+      "type": {
+        "type": "map",
+        "values": "boolean"
+      },
+      "default": {}
+    }
+  ]
+}

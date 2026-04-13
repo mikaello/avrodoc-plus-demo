@@ -1,0 +1,5 @@
+{
+  "type": "bytes",
+  "logicalType": "big-decimal",
+  "doc": "Scalable precision decimal (big-decimal) on bytes. Avro 1.12.1 §Logical Types. Supported in C++, Java, Rust."
+}

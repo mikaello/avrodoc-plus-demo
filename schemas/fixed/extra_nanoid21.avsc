@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "NanoId21",
+  "namespace": "com.example.ids",
+  "size": 21,
+  "doc": "NanoID (21 bytes)."
+}

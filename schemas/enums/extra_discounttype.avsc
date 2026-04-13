@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "DiscountType",
+  "namespace": "com.example.ecommerce",
+  "doc": "DiscountType enum.",
+  "symbols": [
+    "PERCENT",
+    "FIXED",
+    "FREE_SHIPPING",
+    "BUY_X_GET_Y"
+  ],
+  "default": "PERCENT"
+}

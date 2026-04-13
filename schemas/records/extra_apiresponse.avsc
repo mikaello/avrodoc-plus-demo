@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "ApiResponse",
+  "namespace": "com.example.api",
+  "doc": "ApiResponse record.",
+  "fields": [
+    {
+      "name": "status",
+      "type": "int",
+      "default": 200
+    },
+    {
+      "name": "headers",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "body",
+      "type": [
+        "null",
+        "bytes"
+      ],
+      "default": null
+    }
+  ]
+}

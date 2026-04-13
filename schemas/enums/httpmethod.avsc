@@ -1,0 +1,17 @@
+{
+  "type": "enum",
+  "name": "HttpMethod",
+  "namespace": "com.example.enums",
+  "doc": "HTTP methods.",
+  "symbols": [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "HEAD",
+    "OPTIONS",
+    "TRACE"
+  ],
+  "default": "GET"
+}

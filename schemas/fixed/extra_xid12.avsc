@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "XID12",
+  "namespace": "com.example.ids",
+  "size": 12,
+  "doc": "XID (12-byte globally unique ID)."
+}

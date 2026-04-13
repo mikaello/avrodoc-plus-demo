@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName_CamelCase",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: CamelCase",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

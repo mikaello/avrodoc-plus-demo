@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "SpecMD5",
+  "namespace": "com.example.spec",
+  "size": 16,
+  "doc": "Exact example from Avro spec §Fixed: {\"type\":\"fixed\",\"size\":16,\"name\":\"md5\"}"
+}

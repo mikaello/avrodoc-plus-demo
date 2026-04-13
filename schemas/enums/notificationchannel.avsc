@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "NotificationChannel",
+  "namespace": "com.example.enums",
+  "doc": "Notification channels.",
+  "symbols": [
+    "EMAIL",
+    "SMS",
+    "PUSH",
+    "WEBHOOK"
+  ],
+  "default": "EMAIL"
+}

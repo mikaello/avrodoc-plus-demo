@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "CardSuit",
+  "namespace": "com.example.enums",
+  "doc": "Playing card suits. Spec example.",
+  "symbols": [
+    "SPADES",
+    "HEARTS",
+    "DIAMONDS",
+    "CLUBS"
+  ],
+  "default": "CLUBS"
+}

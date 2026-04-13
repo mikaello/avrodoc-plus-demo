@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "SessionRecord",
+  "namespace": "com.example.sessions",
+  "doc": "SessionRecord record.",
+  "fields": [
+    {
+      "name": "sessionId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "userId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "startedAt",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "expiresAt",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "active",
+      "type": "boolean",
+      "default": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "IPv4Address",
+  "namespace": "com.example.fixed",
+  "size": 4,
+  "doc": "IPv4 address (4 bytes)."
+}

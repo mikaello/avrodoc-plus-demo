@@ -1,0 +1,32 @@
+[
+  "null",
+  {
+    "type": "record",
+    "name": "UnionRecord",
+    "namespace": "com.example.unions",
+    "fields": [
+      {
+        "name": "data",
+        "type": "bytes",
+        "default": ""
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "UnionEnum",
+    "namespace": "com.example.unions",
+    "symbols": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "default": "X"
+  },
+  {
+    "type": "fixed",
+    "name": "UnionFixed",
+    "namespace": "com.example.unions",
+    "size": 4
+  }
+]

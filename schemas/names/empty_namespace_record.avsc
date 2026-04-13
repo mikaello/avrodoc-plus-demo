@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "EmptyNamespaceRecord",
+  "namespace": "",
+  "doc": "Empty string namespace = null namespace. Spec: \"The empty string may also be used as a namespace to indicate the null namespace.\"",
+  "fields": [
+    {
+      "name": "y",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

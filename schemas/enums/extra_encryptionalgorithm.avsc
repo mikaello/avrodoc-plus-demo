@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "EncryptionAlgorithm",
+  "namespace": "com.example.crypto",
+  "doc": "EncryptionAlgorithm enum.",
+  "symbols": [
+    "AES_128",
+    "AES_192",
+    "AES_256",
+    "RSA_2048",
+    "RSA_4096",
+    "ECDSA"
+  ],
+  "default": "AES_256"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "SchemaEvolution",
+  "namespace": "com.example.schema",
+  "doc": "Schema compatibility types.",
+  "symbols": [
+    "BACKWARD",
+    "FORWARD",
+    "FULL",
+    "NONE"
+  ],
+  "default": "BACKWARD"
+}

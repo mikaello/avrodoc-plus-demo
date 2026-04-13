@@ -1,0 +1,17 @@
+{
+  "type": "enum",
+  "name": "AggregationType",
+  "namespace": "com.example.analytics",
+  "doc": "Aggregation types.",
+  "symbols": [
+    "SUM",
+    "AVG",
+    "MIN",
+    "MAX",
+    "COUNT",
+    "P50",
+    "P95",
+    "P99"
+  ],
+  "default": "SUM"
+}

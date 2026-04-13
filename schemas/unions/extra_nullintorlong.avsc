@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "NullIntOrLong",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullIntOrLong.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        "int",
+        "long"
+      ],
+      "default": null
+    }
+  ]
+}

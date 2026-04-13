@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "Blake2b32",
+  "namespace": "com.example.crypto",
+  "size": 32,
+  "doc": "BLAKE2b-256 digest."
+}

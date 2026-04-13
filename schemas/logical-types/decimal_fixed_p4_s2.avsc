@@ -1,0 +1,10 @@
+{
+  "type": "fixed",
+  "name": "DecimalFixed_p4_s2",
+  "namespace": "com.example.logical",
+  "size": 3,
+  "logicalType": "decimal",
+  "precision": 4,
+  "scale": 2,
+  "doc": "decimal(4,2) on fixed(3): max 3 bytes = floor(log10(2^(8*3-1)-1)) = 6 digits."
+}

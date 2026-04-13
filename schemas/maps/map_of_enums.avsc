@@ -1,0 +1,13 @@
+{
+  "type": "map",
+  "values": {
+    "type": "enum",
+    "name": "MapStatus",
+    "namespace": "com.example.maps",
+    "symbols": [
+      "ON",
+      "OFF"
+    ],
+    "default": "OFF"
+  }
+}

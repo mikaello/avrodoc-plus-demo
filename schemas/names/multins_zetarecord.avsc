@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ZetaRecord",
+  "namespace": "io.example.zeta",
+  "doc": "Fullname: io.example.zeta.ZetaRecord",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "NullOrMapOfDouble",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: NullOrMapOfDouble.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "double"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

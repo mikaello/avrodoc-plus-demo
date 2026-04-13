@@ -1,0 +1,48 @@
+{
+  "type": "record",
+  "name": "DataExportedEvent",
+  "namespace": "com.example.events",
+  "doc": "Kafka-style event: DataExportedEvent.",
+  "fields": [
+    {
+      "name": "exportId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "default": "AVRO"
+    },
+    {
+      "name": "rowCount",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "sizeBytes",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "checksum",
+      "type": [
+        "null",
+        {
+          "type": "bytes",
+          "logicalType": "big-decimal"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "exportedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "type": "record",
+  "name": "TemporalEvent",
+  "namespace": "com.example.logical",
+  "doc": "An event record demonstrating all temporal logical types together.",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      },
+      "doc": "UUID v4 event identifier."
+    },
+    {
+      "name": "occurredAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      },
+      "doc": "When the event occurred (UTC)."
+    },
+    {
+      "name": "occurredAtUs",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      },
+      "doc": "When the event occurred (UTC, microseconds)."
+    },
+    {
+      "name": "occurredAtNs",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-nanos"
+      },
+      "doc": "When the event occurred (UTC, nanoseconds, Avro 1.12+)."
+    },
+    {
+      "name": "localOccurred",
+      "type": {
+        "type": "long",
+        "logicalType": "local-timestamp-millis"
+      },
+      "doc": "Local occurrence time (no timezone)."
+    },
+    {
+      "name": "eventDate",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      },
+      "doc": "Date of the event."
+    },
+    {
+      "name": "eventTime",
+      "type": {
+        "type": "int",
+        "logicalType": "time-millis"
+      },
+      "doc": "Time of day of the event."
+    },
+    {
+      "name": "eventTimeMicro",
+      "type": {
+        "type": "long",
+        "logicalType": "time-micros"
+      },
+      "doc": "Time of day (microseconds)."
+    },
+    {
+      "name": "retentionPeriod",
+      "type": {
+        "type": "fixed",
+        "name": "EventDuration",
+        "namespace": "com.example.logical",
+        "size": 12,
+        "logicalType": "duration"
+      },
+      "doc": "How long to retain this event."
+    },
+    {
+      "name": "amount",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 18,
+        "scale": 4
+      },
+      "doc": "Monetary amount."
+    }
+  ]
+}

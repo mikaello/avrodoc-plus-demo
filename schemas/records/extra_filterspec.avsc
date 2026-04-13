@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "FilterSpec",
+  "namespace": "com.example.api",
+  "doc": "FilterSpec record.",
+  "fields": [
+    {
+      "name": "field",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "op",
+      "type": "string",
+      "default": "EQ"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "default": ""
+    }
+  ]
+}

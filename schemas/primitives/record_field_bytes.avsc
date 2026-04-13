@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "FieldOfBytes",
+  "namespace": "com.example.primitives",
+  "doc": "A record with a single bytes field.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "bytes",
+      "doc": "The bytes value.",
+      "default": ""
+    }
+  ]
+}

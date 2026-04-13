@@ -1,0 +1,5 @@
+{
+  "type": "int",
+  "logicalType": "date",
+  "doc": "Date as days since unix epoch (1970-01-01). Avro spec §Date."
+}

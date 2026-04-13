@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "EtherAddress",
+  "namespace": "com.example.crypto",
+  "size": 20,
+  "doc": "Ethereum address (20 bytes)."
+}

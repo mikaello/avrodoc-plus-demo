@@ -1,0 +1,10 @@
+{
+  "type": "fixed",
+  "name": "NewFixedName",
+  "namespace": "com.example.aliases",
+  "doc": "Fixed renamed; old name as alias.",
+  "aliases": [
+    "com.example.aliases.OldFixedName"
+  ],
+  "size": 16
+}

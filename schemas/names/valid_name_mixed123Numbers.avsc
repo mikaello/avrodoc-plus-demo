@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "ValidName_mixed123Numbers",
+  "namespace": "com.example.names.valid",
+  "doc": "Valid record name: mixed123Numbers",
+  "fields": [
+    {
+      "name": "v",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

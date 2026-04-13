@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "Timestamp8",
+  "namespace": "com.example.fixed",
+  "size": 8,
+  "doc": "Timestamp as 8-byte fixed."
+}

@@ -1,0 +1,22 @@
+{
+  "type": "enum",
+  "name": "MediaType",
+  "namespace": "com.example.media",
+  "doc": "MIME media types.",
+  "symbols": [
+    "TEXT_PLAIN",
+    "TEXT_HTML",
+    "TEXT_CSV",
+    "APPLICATION_JSON",
+    "APPLICATION_XML",
+    "APPLICATION_OCTET_STREAM",
+    "IMAGE_PNG",
+    "IMAGE_JPEG",
+    "IMAGE_GIF",
+    "IMAGE_SVG",
+    "AUDIO_MP3",
+    "VIDEO_MP4",
+    "MULTIPART_FORM_DATA"
+  ],
+  "default": "APPLICATION_JSON"
+}

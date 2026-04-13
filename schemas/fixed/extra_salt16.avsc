@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "Salt16",
+  "namespace": "com.example.crypto",
+  "size": 16,
+  "doc": "Cryptographic salt (16 bytes)."
+}

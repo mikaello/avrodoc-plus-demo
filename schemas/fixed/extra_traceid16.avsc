@@ -1,0 +1,7 @@
+{
+  "type": "fixed",
+  "name": "TraceId16",
+  "namespace": "com.example.tracing",
+  "size": 16,
+  "doc": "OpenTelemetry TraceId (128-bit = 16 bytes)."
+}

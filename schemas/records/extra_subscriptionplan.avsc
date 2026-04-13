@@ -1,0 +1,35 @@
+{
+  "type": "record",
+  "name": "SubscriptionPlan",
+  "namespace": "com.example.billing",
+  "doc": "SubscriptionPlan record.",
+  "fields": [
+    {
+      "name": "planId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "pricePerMonth",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      }
+    },
+    {
+      "name": "features",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    }
+  ]
+}

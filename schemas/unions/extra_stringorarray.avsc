@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "StringOrArray",
+  "namespace": "com.example.unions.extra",
+  "doc": "Union edge case: StringOrArray.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": [
+        "string",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": ""
+    }
+  ]
+}

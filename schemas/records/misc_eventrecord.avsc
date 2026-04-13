@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "EventRecord",
+  "namespace": "com.example.events",
+  "doc": "EventRecord record.",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "eventType",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "payload",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

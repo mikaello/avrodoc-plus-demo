@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "IsolationLevel",
+  "namespace": "com.example.db",
+  "doc": "Transaction isolation levels.",
+  "symbols": [
+    "READ_UNCOMMITTED",
+    "READ_COMMITTED",
+    "REPEATABLE_READ",
+    "SERIALIZABLE"
+  ],
+  "default": "READ_COMMITTED"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "NotificationType",
+  "namespace": "com.example.notif",
+  "doc": "NotificationType enum.",
+  "symbols": [
+    "SYSTEM",
+    "MENTION",
+    "REPLY",
+    "FOLLOW",
+    "LIKE",
+    "DM"
+  ],
+  "default": "SYSTEM"
+}

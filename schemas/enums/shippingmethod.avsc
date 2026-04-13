@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "ShippingMethod",
+  "namespace": "com.example.shipping",
+  "doc": "Shipping methods.",
+  "symbols": [
+    "STANDARD",
+    "EXPRESS",
+    "OVERNIGHT",
+    "PICKUP"
+  ],
+  "default": "STANDARD"
+}

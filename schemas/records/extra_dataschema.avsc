@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "DataSchema",
+  "namespace": "com.example.schema",
+  "doc": "DataSchema record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "version",
+      "type": "int",
+      "default": 1
+    },
+    {
+      "name": "fields",
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "default": []
+    },
+    {
+      "name": "registeredAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

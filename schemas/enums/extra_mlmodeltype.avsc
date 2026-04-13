@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "MLModelType",
+  "namespace": "com.example.ml",
+  "doc": "MLModelType enum.",
+  "symbols": [
+    "CLASSIFICATION",
+    "REGRESSION",
+    "CLUSTERING",
+    "GENERATION",
+    "EMBEDDING",
+    "DETECTION"
+  ],
+  "default": "CLASSIFICATION"
+}

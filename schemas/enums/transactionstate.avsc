@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "TransactionState",
+  "namespace": "com.example.db",
+  "doc": "Transaction states.",
+  "symbols": [
+    "OPEN",
+    "COMMITTED",
+    "ROLLED_BACK",
+    "ABORTED"
+  ],
+  "default": "OPEN"
+}

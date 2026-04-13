@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "SearchQuery",
+  "namespace": "com.example.search",
+  "doc": "SearchQuery record.",
+  "fields": [
+    {
+      "name": "query",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "page",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 20
+    },
+    {
+      "name": "filters",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    }
+  ]
+}

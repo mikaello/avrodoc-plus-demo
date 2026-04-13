@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "EvolvingSchema",
+  "namespace": "com.example.aliases",
+  "doc": "Demonstrates schema evolution: renamed field (alias), added field (default), changed namespace via record alias.",
+  "aliases": [
+    "com.example.aliases.EvolvingSchemaV1"
+  ],
+  "fields": [
+    {
+      "name": "newName",
+      "type": "string",
+      "aliases": [
+        "oldName"
+      ],
+      "default": "",
+      "doc": "Renamed from oldName to newName."
+    },
+    {
+      "name": "addedField",
+      "type": "int",
+      "default": 0,
+      "doc": "New field with default for backward compatibility."
+    },
+    {
+      "name": "kept",
+      "type": "boolean",
+      "default": false,
+      "doc": "Unchanged field."
+    }
+  ]
+}

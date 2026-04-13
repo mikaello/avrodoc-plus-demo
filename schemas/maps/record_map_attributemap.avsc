@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "AttributeMap",
+  "namespace": "com.example.maps",
+  "doc": "Record with a map of string values.",
+  "fields": [
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "size",
+      "type": "int",
+      "default": 0
+    }
+  ]
+}

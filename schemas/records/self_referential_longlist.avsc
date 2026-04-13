@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "LongList",
+  "namespace": "com.example.records",
+  "aliases": [
+    "com.example.records.LinkedLongs"
+  ],
+  "doc": "A linked list of 64-bit values. Directly from the Avro spec.",
+  "fields": [
+    {
+      "name": "value",
+      "type": "long",
+      "doc": "The value at this node."
+    },
+    {
+      "name": "next",
+      "type": [
+        "null",
+        "com.example.records.LongList"
+      ],
+      "doc": "The next node, or null.",
+      "default": null
+    }
+  ]
+}

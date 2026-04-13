@@ -1,0 +1,17 @@
+{
+  "type": "enum",
+  "name": "DataType",
+  "namespace": "com.example.schema",
+  "doc": "Avro primitive type names.",
+  "symbols": [
+    "STRING",
+    "INT",
+    "LONG",
+    "FLOAT",
+    "DOUBLE",
+    "BOOLEAN",
+    "BYTES",
+    "NULL"
+  ],
+  "default": "STRING"
+}

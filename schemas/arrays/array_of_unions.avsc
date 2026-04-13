@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "items": [
+    "null",
+    "string",
+    "int"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "record",
+  "name": "WebhookPayload",
+  "namespace": "com.example.webhooks",
+  "doc": "WebhookPayload record.",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "event",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    },
+    {
+      "name": "deliveredAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

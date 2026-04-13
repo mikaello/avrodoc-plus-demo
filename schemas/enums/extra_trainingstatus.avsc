@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "TrainingStatus",
+  "namespace": "com.example.ml",
+  "doc": "TrainingStatus enum.",
+  "symbols": [
+    "QUEUED",
+    "PREPARING",
+    "TRAINING",
+    "EVALUATING",
+    "COMPLETED",
+    "FAILED"
+  ],
+  "default": "QUEUED"
+}

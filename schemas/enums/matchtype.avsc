@@ -1,0 +1,14 @@
+{
+  "type": "enum",
+  "name": "MatchType",
+  "namespace": "com.example.enums",
+  "doc": "Search match types.",
+  "symbols": [
+    "EXACT",
+    "PREFIX",
+    "SUFFIX",
+    "CONTAINS",
+    "REGEX"
+  ],
+  "default": "EXACT"
+}

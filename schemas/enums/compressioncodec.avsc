@@ -1,0 +1,15 @@
+{
+  "type": "enum",
+  "name": "CompressionCodec",
+  "namespace": "com.example.enums",
+  "doc": "Avro-supported compression codecs.",
+  "symbols": [
+    "NONE",
+    "DEFLATE",
+    "SNAPPY",
+    "BZIP2",
+    "XZ",
+    "ZSTANDARD"
+  ],
+  "default": "NONE"
+}

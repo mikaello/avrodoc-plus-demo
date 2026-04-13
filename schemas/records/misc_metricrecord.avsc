@@ -1,0 +1,36 @@
+{
+  "type": "record",
+  "name": "MetricRecord",
+  "namespace": "com.example.metrics",
+  "doc": "MetricRecord record.",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value",
+      "type": "double",
+      "default": 0
+    },
+    {
+      "name": "unit",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "default": {}
+    }
+  ]
+}

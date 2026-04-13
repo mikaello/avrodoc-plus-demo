@@ -1,0 +1,25 @@
+{
+  "type": "record",
+  "name": "DataBlock",
+  "namespace": "org.apache.avro.file",
+  "doc": "Avro spec §Object Container Files: file data block schema.",
+  "fields": [
+    {
+      "name": "count",
+      "type": "long"
+    },
+    {
+      "name": "data",
+      "type": "bytes"
+    },
+    {
+      "name": "sync",
+      "type": {
+        "type": "fixed",
+        "name": "DataBlockSync",
+        "namespace": "org.apache.avro.file",
+        "size": 16
+      }
+    }
+  ]
+}

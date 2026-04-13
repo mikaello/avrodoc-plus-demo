@@ -1,0 +1,53 @@
+{
+  "type": "record",
+  "name": "Level1",
+  "namespace": "com.example.records",
+  "doc": "Top level of a 5-level nested record structure.",
+  "fields": [
+    {
+      "name": "l2",
+      "type": {
+        "type": "record",
+        "name": "Level2",
+        "namespace": "com.example.records",
+        "fields": [
+          {
+            "name": "l3",
+            "type": {
+              "type": "record",
+              "name": "Level3",
+              "namespace": "com.example.records",
+              "fields": [
+                {
+                  "name": "l4",
+                  "type": {
+                    "type": "record",
+                    "name": "Level4",
+                    "namespace": "com.example.records",
+                    "fields": [
+                      {
+                        "name": "l5",
+                        "type": {
+                          "type": "record",
+                          "name": "Level5",
+                          "namespace": "com.example.records",
+                          "fields": [
+                            {
+                              "name": "deepValue",
+                              "type": "string",
+                              "default": ""
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

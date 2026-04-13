@@ -1,0 +1,13 @@
+{
+  "type": "enum",
+  "name": "WebSocketState",
+  "namespace": "com.example.ws",
+  "doc": "WebSocketState enum.",
+  "symbols": [
+    "CONNECTING",
+    "OPEN",
+    "CLOSING",
+    "CLOSED"
+  ],
+  "default": "CLOSED"
+}
