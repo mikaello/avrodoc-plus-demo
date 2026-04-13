@@ -4,15 +4,18 @@
     "type": "record",
     "name": "MapValueRecord",
     "namespace": "com.example.maps",
+    "doc": "A record used as the value type in a string-keyed map, pairing an identifier with a score.",
     "fields": [
       {
         "name": "id",
         "type": "string",
+        "doc": "Unique identifier for this entry.",
         "default": ""
       },
       {
         "name": "score",
         "type": "double",
+        "doc": "Computed score for this entry, between 0.0 and 1.0.",
         "default": 0
       }
     ]

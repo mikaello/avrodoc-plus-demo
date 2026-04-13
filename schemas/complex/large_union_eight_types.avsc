@@ -4,10 +4,12 @@
     "type": "record",
     "name": "TypeA",
     "namespace": "com.example.complex.union8",
+    "doc": "String-valued variant of an eight-type union. Used when the payload is human-readable text.",
     "fields": [
       {
         "name": "v",
         "type": "string",
+        "doc": "The string payload.",
         "default": ""
       }
     ]
@@ -16,10 +18,12 @@
     "type": "record",
     "name": "TypeB",
     "namespace": "com.example.complex.union8",
+    "doc": "Integer-valued variant of an eight-type union. Suitable for small whole-number payloads.",
     "fields": [
       {
         "name": "v",
         "type": "int",
+        "doc": "32-bit integer payload.",
         "default": 0
       }
     ]
@@ -28,10 +32,12 @@
     "type": "record",
     "name": "TypeC",
     "namespace": "com.example.complex.union8",
+    "doc": "Long-valued variant of an eight-type union. Use when the integer range exceeds 32 bits.",
     "fields": [
       {
         "name": "v",
         "type": "long",
+        "doc": "64-bit long payload.",
         "default": 0
       }
     ]
@@ -40,10 +46,12 @@
     "type": "record",
     "name": "TypeD",
     "namespace": "com.example.complex.union8",
+    "doc": "Double-valued variant of an eight-type union. Used for floating-point numeric payloads.",
     "fields": [
       {
         "name": "v",
         "type": "double",
+        "doc": "64-bit floating-point payload.",
         "default": 0
       }
     ]
@@ -52,6 +60,7 @@
     "type": "enum",
     "name": "TypeE",
     "namespace": "com.example.complex.union8",
+    "doc": "Enum variant of an eight-type union. Represents one of three abstract categories.",
     "symbols": [
       "E1",
       "E2",
@@ -63,16 +72,19 @@
     "type": "fixed",
     "name": "TypeF",
     "namespace": "com.example.complex.union8",
+    "doc": "Fixed 4-byte variant of an eight-type union. Useful for compact binary identifiers.",
     "size": 4
   },
   {
     "type": "record",
     "name": "TypeG",
     "namespace": "com.example.complex.union8",
+    "doc": "Boolean-valued variant of an eight-type union. Used for simple true/false payloads.",
     "fields": [
       {
         "name": "v",
         "type": "boolean",
+        "doc": "Boolean flag payload.",
         "default": false
       }
     ]
@@ -81,10 +93,12 @@
     "type": "record",
     "name": "TypeH",
     "namespace": "com.example.complex.union8",
+    "doc": "Bytes-valued variant of an eight-type union. Used for opaque binary payloads.",
     "fields": [
       {
         "name": "v",
         "type": "bytes",
+        "doc": "Raw binary payload.",
         "default": ""
       }
     ]

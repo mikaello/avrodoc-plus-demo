@@ -4,10 +4,12 @@
     "type": "record",
     "name": "UnionRecordA",
     "namespace": "com.example.unions",
+    "doc": "First variant of a two-record union, carrying a string payload.",
     "fields": [
       {
         "name": "aField",
         "type": "string",
+        "doc": "String value for variant A.",
         "default": ""
       }
     ]
@@ -16,10 +18,12 @@
     "type": "record",
     "name": "UnionRecordB",
     "namespace": "com.example.unions",
+    "doc": "Second variant of a two-record union, carrying an integer payload.",
     "fields": [
       {
         "name": "bField",
         "type": "int",
+        "doc": "Integer value for variant B.",
         "default": 0
       }
     ]

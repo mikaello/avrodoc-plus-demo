@@ -4,10 +4,12 @@
     "type": "record",
     "name": "Cat",
     "namespace": "com.example.pets",
+    "doc": "Represents a domestic cat. One of three pet variants in this union.",
     "fields": [
       {
         "name": "breed",
         "type": "string",
+        "doc": "Recognised cat breed name, e.g. 'Siamese' or 'Maine Coon'.",
         "default": ""
       }
     ]
@@ -16,10 +18,12 @@
     "type": "record",
     "name": "Dog",
     "namespace": "com.example.pets",
+    "doc": "Represents a domestic dog. One of three pet variants in this union.",
     "fields": [
       {
         "name": "breed",
         "type": "string",
+        "doc": "Recognised dog breed name, e.g. 'Labrador' or 'Poodle'.",
         "default": ""
       }
     ]
@@ -28,10 +32,12 @@
     "type": "record",
     "name": "Bird",
     "namespace": "com.example.pets",
+    "doc": "Represents a pet bird. One of three pet variants in this union.",
     "fields": [
       {
         "name": "species",
         "type": "string",
+        "doc": "Bird species name, e.g. 'Budgerigar' or 'African Grey Parrot'.",
         "default": ""
       }
     ]

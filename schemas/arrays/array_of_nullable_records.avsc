@@ -6,10 +6,12 @@
       "type": "record",
       "name": "NullableArrayItem",
       "namespace": "com.example.arrays",
+      "doc": "An optional array item that may be absent (null) or contain a data payload.",
       "fields": [
         {
           "name": "data",
           "type": "string",
+          "doc": "Raw data payload for this item.",
           "default": ""
         }
       ]
