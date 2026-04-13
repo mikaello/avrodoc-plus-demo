@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "generate": "node scripts/generate-schemas.js",
-    "build": "npx --yes @mikaello/avrodoc-plus -i schemas -o dist/index.html --title \"Avrodoc Plus Demo\"",
+    "build": "avrodoc-plus -i schemas -o dist/index.html --title \"Avrodoc Plus Demo\"",
     "generate:build": "npm run generate && npm run build",
     "validate": "node scripts/validate-schemas.js"
   },
   "devDependencies": {
-    "@mikaello/avrodoc-plus": "1.5.0",
+    "@mikaello/avrodoc-plus": "github:mikaello/avrodoc-plus#perf/eliminate-popover-duplication",
     "avro-js": "^1.12.1"
   }
 }
