@@ -35,6 +35,9 @@ jobs:
       - name: Generate schemas
         run: npm run generate
 
+      - name: Validate schemas
+        run: npm run validate
+
       - name: Build HTML documentation
         run: npm run build
 
