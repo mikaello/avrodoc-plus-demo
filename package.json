@@ -10,7 +10,7 @@
     "validate": "node scripts/validate-schemas.js"
   },
   "devDependencies": {
-    "@mikaello/avrodoc-plus": "github:mikaello/avrodoc-plus#fix/cross-file-type-reference-order",
+    "@mikaello/avrodoc-plus": "github:mikaello/avrodoc-plus#migrate-phase2-ssr",
     "avro-js": "^1.12.1"
   }
 }
