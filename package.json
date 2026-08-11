@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "generate": "node scripts/generate-schemas.js",
-    "build": "npx --yes @mikaello/avrodoc-plus -i schemas -o dist/index.html --title \"Avrodoc Plus Demo\"",
+    "build": "avrodoc-plus -i schemas -o dist/index.html --title \"Avrodoc Plus Demo\"",
     "generate:build": "npm run generate && npm run build",
     "validate": "node scripts/validate-schemas.js"
   },
