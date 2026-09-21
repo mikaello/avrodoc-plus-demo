@@ -10,7 +10,7 @@
     "validate": "node scripts/validate-schemas.js"
   },
   "devDependencies": {
-    "@mikaello/avrodoc-plus": "2.0.1",
+    "@mikaello/avrodoc-plus": "3.0.0",
     "avro-js": "^1.12.1"
   }
 }
